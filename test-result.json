@@ -1,0 +1,966 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/SchoolStuff/PFD/playwrightrepo/PlaywrightTesting/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/SchoolStuff/PFD/playwrightrepo/PlaywrightTesting",
+        "testIgnore": [],
+        "testMatch": [
+          "**.spec.js"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/SchoolStuff/PFD/playwrightrepo/PlaywrightTesting/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/SchoolStuff/PFD/playwrightrepo/PlaywrightTesting",
+        "testIgnore": [],
+        "testMatch": [
+          "**.spec.js"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/SchoolStuff/PFD/playwrightrepo/PlaywrightTesting/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/SchoolStuff/PFD/playwrightrepo/PlaywrightTesting",
+        "testIgnore": [],
+        "testMatch": [
+          "**.spec.js"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFile": "test-results.html"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-result.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "configFile": "D:\\SchoolStuff\\PFD\\playwrightrepo\\PlaywrightTesting\\playwright.config.ts",
+    "rootDir": "D:/SchoolStuff/PFD/playwrightrepo/PlaywrightTesting",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.27.1",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\S0001-Search.spec.js",
+      "file": "tests/S0001-Search.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Search feature",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 3722,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:06.648Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "status": "failed",
+                  "duration": 5,
+                  "error": {
+                    "message": "browserType.launch: Unsupported firefox channel \"chrome\"",
+                    "stack": "browserType.launch: Unsupported firefox channel \"chrome\"\n"
+                  },
+                  "errors": [
+                    {
+                      "message": "browserType.launch: Unsupported firefox channel \"chrome\"\n\n\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:09.817Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 18,
+                  "status": "failed",
+                  "duration": 7,
+                  "error": {
+                    "message": "browserType.launch: Unsupported webkit channel \"chrome\"",
+                    "stack": "browserType.launch: Unsupported webkit channel \"chrome\"\n"
+                  },
+                  "errors": [
+                    {
+                      "message": "browserType.launch: Unsupported webkit channel \"chrome\"\n\n\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:12.910Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "31ea95943bbddb265744-94424558c523652a817b",
+          "file": "tests/S0001-Search.spec.js",
+          "line": 2,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "tests\\S0002-UserExclusives.spec.js",
+      "file": "tests/S0002-UserExclusives.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "User Exclusive page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 5154,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:06.661Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "status": "failed",
+                  "duration": 16,
+                  "error": {
+                    "message": "browserType.launch: Unsupported firefox channel \"chrome\"",
+                    "stack": "browserType.launch: Unsupported firefox channel \"chrome\"\n"
+                  },
+                  "errors": [
+                    {
+                      "message": "browserType.launch: Unsupported firefox channel \"chrome\"\n\n\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:10.279Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 17,
+                  "status": "failed",
+                  "duration": 7,
+                  "error": {
+                    "message": "browserType.launch: Unsupported webkit channel \"chrome\"",
+                    "stack": "browserType.launch: Unsupported webkit channel \"chrome\"\n"
+                  },
+                  "errors": [
+                    {
+                      "message": "browserType.launch: Unsupported webkit channel \"chrome\"\n\n\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:12.868Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "7e7a62e6925366998c77-f9a5871fdad4a1dd1ee0",
+          "file": "tests/S0002-UserExclusives.spec.js",
+          "line": 2,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "tests\\S0003-ShopeeSupermarket.spec.js",
+      "file": "tests/S0003-ShopeeSupermarket.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Shopee Supermarket page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 5110,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:06.656Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "status": "failed",
+                  "duration": 10,
+                  "error": {
+                    "message": "browserType.launch: Unsupported firefox channel \"chrome\"",
+                    "stack": "browserType.launch: Unsupported firefox channel \"chrome\"\n"
+                  },
+                  "errors": [
+                    {
+                      "message": "browserType.launch: Unsupported firefox channel \"chrome\"\n\n\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:10.986Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 20,
+                  "status": "failed",
+                  "duration": 5,
+                  "error": {
+                    "message": "browserType.launch: Unsupported webkit channel \"chrome\"",
+                    "stack": "browserType.launch: Unsupported webkit channel \"chrome\"\n"
+                  },
+                  "errors": [
+                    {
+                      "message": "browserType.launch: Unsupported webkit channel \"chrome\"\n\n\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:13.077Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c9b2ed390419ba572477-01045d05f67ee32e9fff",
+          "file": "tests/S0003-ShopeeSupermarket.spec.js",
+          "line": 2,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "tests\\S0004-BrandDiscount.spec.js",
+      "file": "tests/S0004-BrandDiscount.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Brand discount page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "passed",
+                  "duration": 5281,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:06.660Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "status": "failed",
+                  "duration": 6,
+                  "error": {
+                    "message": "browserType.launch: Unsupported firefox channel \"chrome\"",
+                    "stack": "browserType.launch: Unsupported firefox channel \"chrome\"\n"
+                  },
+                  "errors": [
+                    {
+                      "message": "browserType.launch: Unsupported firefox channel \"chrome\"\n\n\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:11.282Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 19,
+                  "status": "failed",
+                  "duration": 7,
+                  "error": {
+                    "message": "browserType.launch: Unsupported webkit channel \"chrome\"",
+                    "stack": "browserType.launch: Unsupported webkit channel \"chrome\"\n"
+                  },
+                  "errors": [
+                    {
+                      "message": "browserType.launch: Unsupported webkit channel \"chrome\"\n\n\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:12.997Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5469abc252bcc46e5038-83ff31d23118bf446148",
+          "file": "tests/S0004-BrandDiscount.spec.js",
+          "line": 2,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "tests\\S0005-HelpCenter.spec.js",
+      "file": "tests/S0005-HelpCenter.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Help Center",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 6024,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:06.661Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "status": "failed",
+                  "duration": 5,
+                  "error": {
+                    "message": "browserType.launch: Unsupported firefox channel \"chrome\"",
+                    "stack": "browserType.launch: Unsupported firefox channel \"chrome\"\n"
+                  },
+                  "errors": [
+                    {
+                      "message": "browserType.launch: Unsupported firefox channel \"chrome\"\n\n\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:11.416Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 21,
+                  "status": "failed",
+                  "duration": 6,
+                  "error": {
+                    "message": "browserType.launch: Unsupported webkit channel \"chrome\"",
+                    "stack": "browserType.launch: Unsupported webkit channel \"chrome\"\n"
+                  },
+                  "errors": [
+                    {
+                      "message": "browserType.launch: Unsupported webkit channel \"chrome\"\n\n\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:13.137Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "4239c6926d3d8ddd12b0-86546ca46ff6030d15f4",
+          "file": "tests/S0005-HelpCenter.spec.js",
+          "line": 2,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "tests\\S0006-Language.spec.js",
+      "file": "tests/S0006-Language.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "different languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "status": "passed",
+                  "duration": 6690,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:06.675Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "status": "failed",
+                  "duration": 6,
+                  "error": {
+                    "message": "browserType.launch: Unsupported firefox channel \"chrome\"",
+                    "stack": "browserType.launch: Unsupported firefox channel \"chrome\"\n"
+                  },
+                  "errors": [
+                    {
+                      "message": "browserType.launch: Unsupported firefox channel \"chrome\"\n\n\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:11.795Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 22,
+                  "status": "failed",
+                  "duration": 5,
+                  "error": {
+                    "message": "browserType.launch: Unsupported webkit channel \"chrome\"",
+                    "stack": "browserType.launch: Unsupported webkit channel \"chrome\"\n"
+                  },
+                  "errors": [
+                    {
+                      "message": "browserType.launch: Unsupported webkit channel \"chrome\"\n\n\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:13.433Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "db0a2393ed85654ebd2d-15bb861e48a018d0adde",
+          "file": "tests/S0006-Language.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "tests\\T0001-HomePage.spec.js",
+      "file": "tests/T0001-HomePage.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Home page has HOME as title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "status": "passed",
+                  "duration": 1448,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:06.682Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "status": "failed",
+                  "duration": 6,
+                  "error": {
+                    "message": "browserType.launch: Unsupported firefox channel \"chrome\"",
+                    "stack": "browserType.launch: Unsupported firefox channel \"chrome\"\n"
+                  },
+                  "errors": [
+                    {
+                      "message": "browserType.launch: Unsupported firefox channel \"chrome\"\n\n\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:12.096Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 23,
+                  "status": "failed",
+                  "duration": 4,
+                  "error": {
+                    "message": "browserType.launch: Unsupported webkit channel \"chrome\"",
+                    "stack": "browserType.launch: Unsupported webkit channel \"chrome\"\n"
+                  },
+                  "errors": [
+                    {
+                      "message": "browserType.launch: Unsupported webkit channel \"chrome\"\n\n\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:13.523Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "184d8f9244b78b485ed2-cc1939567aa230684595",
+          "file": "tests/T0001-HomePage.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "tests\\T0002-AboutPage.spec.js",
+      "file": "tests/T0002-AboutPage.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "About page has ABOUT as title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "status": "passed",
+                  "duration": 1195,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:06.672Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "status": "failed",
+                  "duration": 6,
+                  "error": {
+                    "message": "browserType.launch: Unsupported firefox channel \"chrome\"",
+                    "stack": "browserType.launch: Unsupported firefox channel \"chrome\"\n"
+                  },
+                  "errors": [
+                    {
+                      "message": "browserType.launch: Unsupported firefox channel \"chrome\"\n\n\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:12.233Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 24,
+                  "status": "failed",
+                  "duration": 4,
+                  "error": {
+                    "message": "browserType.launch: Unsupported webkit channel \"chrome\"",
+                    "stack": "browserType.launch: Unsupported webkit channel \"chrome\"\n"
+                  },
+                  "errors": [
+                    {
+                      "message": "browserType.launch: Unsupported webkit channel \"chrome\"\n\n\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:13.531Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f70bc1c132c6423ecc78-8bb21ef28a9c68337c90",
+          "file": "tests/T0002-AboutPage.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "tests\\T0003-ClassesPage.spec.js",
+      "file": "tests/T0003-ClassesPage.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Classes page has CLASSES as title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "status": "passed",
+                  "duration": 810,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:08.021Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "status": "failed",
+                  "duration": 7,
+                  "error": {
+                    "message": "browserType.launch: Unsupported firefox channel \"chrome\"",
+                    "stack": "browserType.launch: Unsupported firefox channel \"chrome\"\n"
+                  },
+                  "errors": [
+                    {
+                      "message": "browserType.launch: Unsupported firefox channel \"chrome\"\n\n\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:12.652Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 25,
+                  "status": "failed",
+                  "duration": 4,
+                  "error": {
+                    "message": "browserType.launch: Unsupported webkit channel \"chrome\"",
+                    "stack": "browserType.launch: Unsupported webkit channel \"chrome\"\n"
+                  },
+                  "errors": [
+                    {
+                      "message": "browserType.launch: Unsupported webkit channel \"chrome\"\n\n\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-06T07:10:13.579Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ad12f819a32225382d5b-4e9d7eae1d202ca5dcf2",
+          "file": "tests/T0003-ClassesPage.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
