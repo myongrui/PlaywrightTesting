@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-test('test', async ({ page }) => {
+test('Shopee Supermarket page', async ({ page }) => {
   await page.goto('https://shopee.sg/');
   await page.locator('shopee-banner-popup-stateful path').nth(1).click();
   await page.getByRole('link', { name: 'Shopee Supermarket' }).click();

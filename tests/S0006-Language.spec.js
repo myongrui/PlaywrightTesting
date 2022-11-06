@@ -1,6 +1,6 @@
 const {test, expect} = require('@playwright/test');
 
-test('test', async ({ page }) => {
+test('different languages', async ({ page }) => {
   await page.goto('https://shopee.sg/');
   await page.locator('shopee-banner-popup-stateful path').nth(1).click();
   await page.locator('div[role="button"]:has-text("English")').click();
