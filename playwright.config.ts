@@ -8,6 +8,6 @@ const config: PlaywrightTestConfig = {
     },
     testMatch: ["**.spec.js"],
     retries: 0,
-    reporter: [["dot"],["json", { outputFile: "test-result.json"}]]
+    reporter: [["html", {outputFile: "test-results.html"}],["json", { outputFile: "test-result.json"}]]
 }
 export default config; 
