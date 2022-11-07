@@ -54,8 +54,8 @@
   },
   "suites": [
     {
-      "title": "tests\\T0001-saucedemoLogin.spec.js",
-      "file": "tests/T0001-saucedemoLogin.spec.js",
+      "title": "tests\\T0001-SauceDemoLogin.spec.js",
+      "file": "tests/T0001-SauceDemoLogin.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
@@ -74,20 +74,20 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 757,
+                  "duration": 3692,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2022-11-06T15:34:10.084Z",
+                  "startTime": "2022-11-07T03:10:55.853Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "bda06b0b606f68a07be0-e63d7496d185a9938aae",
-          "file": "tests/T0001-saucedemoLogin.spec.js",
+          "id": "1a96b977ad6fde712548-4b87f8d83d7e9edd4bb3",
+          "file": "tests/T0001-SauceDemoLogin.spec.js",
           "line": 23,
           "column": 1
         },
@@ -105,86 +105,80 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 5405,
+                  "status": "timedOut",
+                  "duration": 29999,
                   "error": {
-                    "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"https://www.saucedemo.com/\u001b[7minventory.html\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"https://www.saucedemo.com/\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"https://www.saucedemo.com/\u001b[7minventory.html\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"https://www.saucedemo.com/\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\n    at C:\\Users\\chiaj\\Desktop\\school work\\Year2\\Sem 2\\PFD\\Assignment 1\\PlaywrightTesting\\tests\\T0001-saucedemoLogin.spec.js:46:24"
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
                   },
                   "errors": [
                     {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
                       "location": {
-                        "file": "C:\\Users\\chiaj\\Desktop\\school work\\Year2\\Sem 2\\PFD\\Assignment 1\\PlaywrightTesting\\tests\\T0001-saucedemoLogin.spec.js",
-                        "column": 24,
-                        "line": 46
+                        "file": "C:\\Users\\chiaj\\Desktop\\school work\\Year2\\Sem 2\\PFD\\Assignment 1\\PlaywrightTesting\\tests\\T0001-SauceDemoLogin.spec.js",
+                        "column": 16,
+                        "line": 47
                       },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"https://www.saucedemo.com/\u001b[7minventory.html\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"https://www.saucedemo.com/\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39mtests\\T0001-saucedemoLogin.spec.js:46\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[id=\"password\"]'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'secret_sauce'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[id=\"login-button\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'https://www.saucedemo.com/inventory.html'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\chiaj\\Desktop\\school work\\Year2\\Sem 2\\PFD\\Assignment 1\\PlaywrightTesting\\tests\\T0001-saucedemoLogin.spec.js:46:24\u001b[22m"
+                      "message": "page.waitForURL: Navigation failed because page was closed!\n=========================== logs ===========================\nwaiting for navigation to \"https://www.saucedemo.com/inventory.html\" until \"load\"\n============================================================\n\n\u001b[90m   at \u001b[39mtests\\T0001-SauceDemoLogin.spec.js:47\n\n\u001b[0m \u001b[90m 45 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[id=\"password\"]'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'secret_sauce'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 46 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[id=\"login-button\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForURL(\u001b[32m'https://www.saucedemo.com/inventory.html'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclose()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 50 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\chiaj\\Desktop\\school work\\Year2\\Sem 2\\PFD\\Assignment 1\\PlaywrightTesting\\tests\\T0001-SauceDemoLogin.spec.js:47:16\u001b[22m"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2022-11-06T15:34:11.457Z",
+                  "startTime": "2022-11-07T03:11:00.407Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\chiaj\\Desktop\\school work\\Year2\\Sem 2\\PFD\\Assignment 1\\PlaywrightTesting\\test-results\\tests-T0001-saucedemoLogin-Login-not-successful-Fail-test-\\test-failed-1.png"
+                      "path": "C:\\Users\\chiaj\\Desktop\\school work\\Year2\\Sem 2\\PFD\\Assignment 1\\PlaywrightTesting\\test-results\\tests-T0001-SauceDemoLogin-Login-not-successful-Fail-test-\\test-failed-1.png"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\chiaj\\Desktop\\school work\\Year2\\Sem 2\\PFD\\Assignment 1\\PlaywrightTesting\\tests\\T0001-saucedemoLogin.spec.js",
-                    "column": 24,
-                    "line": 46
-                  }
+                  ]
                 },
                 {
                   "workerIndex": 1,
-                  "status": "failed",
-                  "duration": 6093,
+                  "status": "timedOut",
+                  "duration": 30000,
                   "error": {
-                    "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"https://www.saucedemo.com/\u001b[7minventory.html\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"https://www.saucedemo.com/\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"https://www.saucedemo.com/\u001b[7minventory.html\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"https://www.saucedemo.com/\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\n    at C:\\Users\\chiaj\\Desktop\\school work\\Year2\\Sem 2\\PFD\\Assignment 1\\PlaywrightTesting\\tests\\T0001-saucedemoLogin.spec.js:46:24"
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
                   },
                   "errors": [
                     {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
                       "location": {
-                        "file": "C:\\Users\\chiaj\\Desktop\\school work\\Year2\\Sem 2\\PFD\\Assignment 1\\PlaywrightTesting\\tests\\T0001-saucedemoLogin.spec.js",
-                        "column": 24,
-                        "line": 46
+                        "file": "C:\\Users\\chiaj\\Desktop\\school work\\Year2\\Sem 2\\PFD\\Assignment 1\\PlaywrightTesting\\tests\\T0001-SauceDemoLogin.spec.js",
+                        "column": 16,
+                        "line": 47
                       },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"https://www.saucedemo.com/\u001b[7minventory.html\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"https://www.saucedemo.com/\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\u001b[2m  -   selector resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39mtests\\T0001-saucedemoLogin.spec.js:46\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[id=\"password\"]'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'secret_sauce'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[id=\"login-button\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'https://www.saucedemo.com/inventory.html'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\chiaj\\Desktop\\school work\\Year2\\Sem 2\\PFD\\Assignment 1\\PlaywrightTesting\\tests\\T0001-saucedemoLogin.spec.js:46:24\u001b[22m"
+                      "message": "page.waitForURL: Navigation failed because page was closed!\n=========================== logs ===========================\nwaiting for navigation to \"https://www.saucedemo.com/inventory.html\" until \"load\"\n============================================================\n\n\u001b[90m   at \u001b[39mtests\\T0001-SauceDemoLogin.spec.js:47\n\n\u001b[0m \u001b[90m 45 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[id=\"password\"]'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'secret_sauce'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 46 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[id=\"login-button\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForURL(\u001b[32m'https://www.saucedemo.com/inventory.html'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclose()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 50 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\chiaj\\Desktop\\school work\\Year2\\Sem 2\\PFD\\Assignment 1\\PlaywrightTesting\\tests\\T0001-SauceDemoLogin.spec.js:47:16\u001b[22m"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2022-11-06T15:34:17.590Z",
+                  "startTime": "2022-11-07T03:11:31.622Z",
                   "attachments": [
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\chiaj\\Desktop\\school work\\Year2\\Sem 2\\PFD\\Assignment 1\\PlaywrightTesting\\test-results\\tests-T0001-saucedemoLogin-Login-not-successful-Fail-test--retry1\\trace.zip"
+                      "path": "C:\\Users\\chiaj\\Desktop\\school work\\Year2\\Sem 2\\PFD\\Assignment 1\\PlaywrightTesting\\test-results\\tests-T0001-SauceDemoLogin-Login-not-successful-Fail-test--retry1\\trace.zip"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\chiaj\\Desktop\\school work\\Year2\\Sem 2\\PFD\\Assignment 1\\PlaywrightTesting\\test-results\\tests-T0001-saucedemoLogin-Login-not-successful-Fail-test--retry1\\test-failed-1.png"
+                      "path": "C:\\Users\\chiaj\\Desktop\\school work\\Year2\\Sem 2\\PFD\\Assignment 1\\PlaywrightTesting\\test-results\\tests-T0001-SauceDemoLogin-Login-not-successful-Fail-test--retry1\\test-failed-1.png"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\chiaj\\Desktop\\school work\\Year2\\Sem 2\\PFD\\Assignment 1\\PlaywrightTesting\\tests\\T0001-saucedemoLogin.spec.js",
-                    "column": 24,
-                    "line": 46
-                  }
+                  ]
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "bda06b0b606f68a07be0-a7ee5b1c999f1ca9102d",
-          "file": "tests/T0001-saucedemoLogin.spec.js",
-          "line": 41,
+          "id": "1a96b977ad6fde712548-1f55132bf4b5c14a72e1",
+          "file": "tests/T0001-SauceDemoLogin.spec.js",
+          "line": 42,
           "column": 1
         }
       ]

@@ -16,7 +16,7 @@ const config: PlaywrightTestConfig = {
         */
     },
     testMatch: ["**.spec.js"],
-    retries: 1, //Set number of retries if test case fail
+    retries: 0, //Set number of retries if test case fail
     reporter: [["html", {outputFile: "test-results.html"}],["json", { outputFile: "test-result.json"}]]
 }
 export default config; 
