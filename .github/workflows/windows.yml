@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Playwright Test on Windows
 on:
   push:
     branches: [main, master]
