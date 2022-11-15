@@ -2,9 +2,10 @@
 
 /** @type {import('@playwright/test').PlaywrightTestConfig} */
 const config = {
+  globalSetup: require.resolve('./authentication.js'),
     use: {
-      trace: 'retain-on-failure',
-    },
+      storageState: 'StorageState.json'
+    }
   };
   
   module.exports = config;
