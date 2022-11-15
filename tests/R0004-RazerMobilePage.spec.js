@@ -23,10 +23,8 @@ test('Test 03.If Razer-Mobile page third item is available', async ({ page }) =>
   await expect(page).toHaveURL('https://www.razer.com/sg-en/mobile-controllers/razer-kishi');
 });
 
-/*
-test('Fail Test 01.If Razer-Mobile page third item is available', async ({ page }) => {
+test('Fail Test 01.If Razer-Mobile page third item is unvailable', async ({ page }) => {
   await commonTestStep.MobileBaseTest(page);
   await page.locator('div[role="listitem"]:has-text("Razer Kishi Make your move with our award-winning universal mobile controller th")').getByRole('link', { name: 'Learn More >' }).click();
   await expect(page).toHaveURL('https://www.razer.com/sg-en/mobile-controllersi');
 });
-*/
