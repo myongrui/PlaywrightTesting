@@ -2,7 +2,6 @@ import { test, expect } from '@playwright/test';
 test('test', async ({ page }) => {
   await page.goto('https://www.razer.com/sg-en');
   await page.getByRole('link', { name: 'Support' }).click();
-  await expect(page).toHaveURL('https://support.razer.com/?c=sg');
   await page.locator('ul:has-text("PC Console Mobile Lifestyle Services Replacement Parts")').getByRole('link', { name: 'PC' }).click();
   await expect(page).toHaveURL('https://support.razer.com/pc');
   await page.getByRole('link', { name: 'Laptops' }).click();
