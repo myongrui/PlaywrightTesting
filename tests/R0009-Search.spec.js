@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 test('test', async ({ page }) => {
+  
   await page.goto('https://www.razer.com/sg-en');
   await page.getByRole('button', { name: 'Search' }).click();
   await page.getByPlaceholder('Search razer.com').fill('Mice');
