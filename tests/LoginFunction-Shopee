@@ -1,3 +1,0 @@
-exports.shopeeLogin = function loginFunction(){
-    return 'login';
-}
