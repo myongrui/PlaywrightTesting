@@ -1,26 +1,10 @@
-const { devices } = require('@playwright/test');
+// @ts-check
 
 /** @type {import('@playwright/test').PlaywrightTestConfig} */
 const config = {
-  projects: [
-    {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+    use: {
+      trace: 'retain-on-failure',
     },
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
-    
-  ],
-  retries: 1,
-  use: {
-    trace: 'on-first-retry',
-  },
-};
-
-module.exports = config;
+  };
+  
+  module.exports = config;

@@ -1,4 +1,6 @@
 const {test, expect} = require('@playwright/test'); //add module
+const {shopeeLogin} = require('./LoginFunction-Shopee')
+
 
 test('About page has ABOUT as title',async({page}) => {
     //Visit url

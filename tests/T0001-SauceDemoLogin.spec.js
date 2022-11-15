@@ -38,7 +38,7 @@ test('If login successful (Success test)', async({page}) => {
     await page.close();
 });
 
-
+/*
 test('Login not successful (Fail test)', async({page}) => {
     await page.goto('https://www.saucedemo.com/');
     await page.locator('id=user-name').fill('wrongUserName');
@@ -47,7 +47,7 @@ test('Login not successful (Fail test)', async({page}) => {
     await page.waitForURL('https://www.saucedemo.com/inventory.html');
     await page.close();
 });
-
+*/
 /*
 //Only this test will be execute in this file
 test.only('Login not successful (Fail test)', async({page}) => {
