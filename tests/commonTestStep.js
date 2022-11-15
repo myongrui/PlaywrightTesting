@@ -17,7 +17,7 @@ module.exports = {
     } )
   },
 
-  LooutBaseTest: async function (page) {
+  LogoutBaseTest: async function (page) {
     await test.step(`logout`, async () => {
         await page.getByRole('link', { name: 'Log Out' }).click();
         await expect(page).toHaveURL('https://www.razer.com/sg-en/services')
