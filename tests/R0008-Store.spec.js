@@ -1,6 +1,8 @@
 import { test, expect } from '@playwright/test';
 test('test', async ({ page }) => {
+    //Get the link
     await page.goto('https://www.razer.com/sg-en');
+    //Get the button
     await page.getByRole('link', { name: 'Store' }).click();
     await expect(page).toHaveURL('https://www.razer.com/sg-en/store');
     await page.getByRole('link', { name: 'Mice' }).click();
