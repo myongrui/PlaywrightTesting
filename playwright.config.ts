@@ -1,7 +1,25 @@
-import { PlaywrightTestConfig } from "@playwright/test";
+import { devices, PlaywrightTestConfig } from "@playwright/test";
 
 const config: PlaywrightTestConfig = {
-  use:{
+  projects: [
+    {
+      name: "chromium",
+      use: { ...devices["Desktop Chrome"] },
+    },
+    {
+      name: "pixel",
+      use: { ...devices["Pixel 5"] },
+    },
+    {
+      name: "firefox",
+      use: { ...devices["Desktop Firefox"] },
+    },
+    {
+      name: "webkit",
+      use: { ...devices["Desktop Safari"] },
+    },
+  ],
+  use: {
     headless: true,
     storageState: "./auth.json",
     screenshot: "only-on-failure",
@@ -10,7 +28,7 @@ const config: PlaywrightTestConfig = {
   },
   testMatch: ["**.spec.js"],
   retries: 0,
-  reporter: [["html", { outputFile: "testreports.html"}]]
-}
+  reporter: [["html", { outputFile: "testreports.html" }]],
+};
 
 export default config;
