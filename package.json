@@ -1,7 +1,7 @@
 
 {
   "scripts": {
-    "test": "npx playwright test"
+    "test": "npx playwright test R0004-RazerMobilePage.spec.js --reporter=html"
   },
   "devDependencies": {
     "@playwright/test": "^1.27.1"
