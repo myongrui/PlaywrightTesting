@@ -2,7 +2,6 @@ import { test, expect } from '@playwright/test';
 test('test', async ({ page }) => {
   await page.goto('https://parabank.parasoft.com/parabank/index.htm');
   await page.getByRole('link', { name: 'Register' }).click();
-  await expect(page).toHaveURL('https://parabank.parasoft.com/parabank/register.htm;jsessionid=B3C29E0AB0859512FA06B192C1854BDD');
   await page.locator('input[name="customer\\.firstName"]').click();
   await page.locator('input[name="customer\\.firstName"]').fill('teemo');
   await page.locator('input[name="customer\\.firstName"]').press('Tab');
