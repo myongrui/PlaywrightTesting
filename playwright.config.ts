@@ -21,8 +21,7 @@ const config: PlaywrightTestConfig = {
   ],
   testMatch: ["**.spec.js"],
   retries: 0,
-  reporter: 'html',
-  workers: process.env.CI ? 2 : undefined,
+  reporter: [['html',{outputFolder: 'playwright-report'}]],
   use: {
     headless: true,
     // storageState: "./auth.json",
