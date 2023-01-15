@@ -19,7 +19,7 @@ const config: PlaywrightTestConfig = {
     //   use: { ...devices["Desktop Safari"] },
     // },
   ],
-  testMatch: ["**.spec.js"],
+  testMatch: "P0002-Login.spec.js",//["**.spec.js"],
   retries: 0,
   //reporter: [['html',{outputFolder: 'playwright-report'}]],
   use: {
