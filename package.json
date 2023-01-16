@@ -1,6 +1,9 @@
 {
   "scripts": {
     "test": "npx playwright test",
+    "windowtest": "npx playwright test --config=window.config.ts",
+    "mactest": "npx playwright test --config=macos.config.ts",
+    "linuxtest": "npx playwright test --config=linux.config.ts",
     "report": "npx playwright test --reporter=html && npx playwright show-report"
   },
   "devDependencies": {
