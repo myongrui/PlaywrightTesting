@@ -6,24 +6,24 @@ const config: PlaywrightTestConfig = {
       name: "chromium",
       use: { ...devices["Desktop Chrome"] },
     },
-    // {
-    //   name: "pixel",
-    //   use: { ...devices["Pixel 5"] },
-    // },
-    // {
-    //   name: "firefox",
-    //   use: { ...devices["Desktop Firefox"] },
-    // },
-    // {
-    //   name: "webkit",
-    //   use: { ...devices["Desktop Safari"] },
-    // },
+    {
+      name: "pixel",
+      use: { ...devices["Pixel 5"] },
+    },
+    {
+      name: "firefox",
+      use: { ...devices["Desktop Firefox"] },
+    },
+    {
+      name: "webkit",
+      use: { ...devices["Desktop Safari"] },
+    },
   ],
   //testMatch: ["**.spec.js"],
   retries: 0,
-  reporter: [['html',{outputFolder: 'playwright-report'}]],
+  reporter: [['html',{outputFolder: './playwright-report/windows'}]],
   use: {
-    headless: true,
+    headless: false,
     // storageState: "./auth.json",
     navigationTimeout: 60000,
   },
