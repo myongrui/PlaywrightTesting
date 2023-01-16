@@ -10,8 +10,8 @@ resources:
     ref: refs/heads/main
 
 jobs:
-- job: Job_1
-  displayName: 'Windows '
+- job: Windows
+  displayName: 'Windows'
   pool:
     vmImage: windows-latest
   steps:
@@ -40,8 +40,8 @@ jobs:
       tabName: Playwright Report
       reportDir: playwright-report/windows/index.html
 
-- job: Job_2
-  displayName: 'ubuntu'
+- job: Ubuntu
+  displayName: 'Ubuntu'
   pool:
     vmImage: ubuntu-latest
   steps:
@@ -69,5 +69,6 @@ jobs:
     inputs:
       tabName: Playwright Report
       reportDir: playwright-report/windows/index.html
+
 
 ...
