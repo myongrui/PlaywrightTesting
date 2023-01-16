@@ -1,5 +1,7 @@
 {
   "scripts": {
+    "register":"npx playwright test reg.spec.js ",
+    "saveauth":"npx playwright test login.spec.js --save-storage=auth.json",
     "test": "npx playwright test",
     "windowtest": "npx playwright test --config=window.config.ts",
     "mactest": "npx playwright test --config=macos.config.ts",
