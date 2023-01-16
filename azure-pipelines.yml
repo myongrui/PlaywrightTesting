@@ -1,20 +1,73 @@
+variables:
+- name: BuildParameters.workingDirectory
+  value: ''
+- name: BuildParameters.workingDir
+  value: ''
+resources:
+  repositories:
+  - repository: self
+    type: git
+    ref: refs/heads/main
+
 jobs:
-    - deployment: Run_E2E_Tests
-      pool:
-        vmImage: ubuntu-20.04
-      container: mcr.microsoft.com/playwright:v1.29.0-focal
-      environment: testing
-      strategy:
-        runOnce:
-          deploy:
-            steps:
-            - checkout: self
-            - task: Bash@3
-              displayName: 'Run Playwright tests'
-              inputs:
-                workingDirectory: 'my-e2e-tests'
-                targetType: 'inline'
-                failOnStderr: true
-                script: |
-                  npm ci
-                  npx playwright test
+- job: Job_1
+  displayName: 'Windows '
+  pool:
+    vmImage: windows-latest
+  steps:
+  - checkout: self
+    clean: true
+    fetchTags: false
+  - task: NodeTool@0
+    displayName: Node Installation
+    inputs:
+      versionSpec: 16.x
+  - task: CmdLine@2
+    displayName: Install PlayWright
+    inputs:
+      script: npm i && npx playwright install
+      workingDirectory: $(BuildParameters.workingDirectory)
+  - task: Npm@1
+    displayName: Execute Test
+    inputs:
+      command: custom
+      workingDir: $(BuildParameters.workingDir)
+      verbose: false
+      customCommand: run windowtest
+  - task: PublishHtmlReport@1
+    displayName: Publish Html Report
+    inputs:
+      tabName: Playwright Report
+      reportDir: playwright-report/windows/index.html
+
+- job: Job_2
+  displayName: 'ubuntu'
+  pool:
+    vmImage: ubuntu-latest
+  steps:
+  - checkout: self
+    clean: true
+    fetchTags: false
+  - task: NodeTool@0
+    displayName: Node Installation
+    inputs:
+      versionSpec: 16.x
+  - task: CmdLine@2
+    displayName: Install PlayWright
+    inputs:
+      script: npm i && npx playwright install
+      workingDirectory: $(BuildParameters.workingDirectory)
+  - task: Npm@1
+    displayName: Execute Test
+    inputs:
+      command: custom
+      workingDir: $(BuildParameters.workingDir)
+      verbose: false
+      customCommand: run windowtest
+  - task: PublishHtmlReport@1
+    displayName: Publish Html Report
+    inputs:
+      tabName: Playwright Report
+      reportDir: playwright-report/windows/index.html
+
+...
