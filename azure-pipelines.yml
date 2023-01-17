@@ -1,39 +1,23 @@
-variables:
-- name: BuildParameters.workingDirectory
-  value: ''
-- name: BuildParameters.workingDir
-  value: ''
-resources:
-  repositories:
-  - repository: self
-    type: git
-    ref: refs/heads/main
+trigger:
+- main
+- master
 
-jobs:
-  - job: Job_1
-    displayName: "Run Test"
-    pool:
-      vmImage: windows-lates
-    steps:
-      - checkout: self
-        clean: true
-        fetchTags: false
-      - task: NodeTool@0
-        displayName: Node Installation
-        inputs:
-          versionSpec: 16.x
-      - task: CmdLine@2
-        displayName: Install PlayWright
-        inputs:
-          script: npm i && npx playwright install
-          workingDirectory: $(BuildParameters.workingDirectory)
-      - task: CmdLine@2
-        displayName: Execute Test
-        inputs:
-          script: npx playwright test --browser=all
+pool:
+  vmImage: windows-latest
 
-      - task: PublishHtmlReport@1
-        displayName: Publish Html Report
-        inputs:
-          tabName: Playwright Report
-          reportDir: playwright-report/windows/index.html
+steps:
+- task: UseNode@1
+  inputs:
+    version: '16.x'
+  displayName: 'Use Node.js 16.x'
+- script: |
+    npm ci
+    npx playwright install --with-deps
+    npx playwright test --browser=all
+  displayName: 'Run Playwright tests on all browsers'
+  
+- task: PublishHtmlReport@1
+  displayName: Publish Html Report
+  inputs:
+      tabName: Playwright Report
+      reportDir: playwright-report/windows/index.html
