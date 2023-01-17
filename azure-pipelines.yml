@@ -1,17 +1,19 @@
-strategy:
-  matrix:
-    windows:
-      vmImage: windows-latest
-    ubuntu:
-      vmImage: ubuntu-latest
-    macos:
-      vmImage: macos-latest
+variables:
+- name: BuildParameters.workingDirectory
+  value: ''
+- name: BuildParameters.workingDir
+  value: ''
+resources:
+  repositories:
+  - repository: self
+    type: git
+    ref: refs/heads/main
 
 jobs:
   - job: Job_1
     displayName: "Run Test"
     pool:
-      vmImage: ${{ matrix.vmImage }}
+      vmImage: windows-lates
     steps:
       - checkout: self
         clean: true
