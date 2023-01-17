@@ -22,7 +22,6 @@ steps:
     testRunner: JUnit
     testResultsFiles: '**/TEST-*.xml'
     searchFolder: 'playwright-test-results'
-  displayName: 'Publish test results'
   
 - task: PublishHtmlReport@1
   displayName: 'Publish Html Report'
