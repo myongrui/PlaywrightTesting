@@ -1,0 +1,17 @@
+trigger:
+- main
+- master
+
+pool:
+  vmImage: windows-latest
+
+steps:
+- task: UseNode@1
+  inputs:
+    version: '16.x'
+  displayName: 'Use Node.js 16.x'
+- script: |
+    npm ci
+    npx playwright install --with-deps
+    npx playwright test --browser=all
+  displayName: 'Run Playwright tests on all browsers'
