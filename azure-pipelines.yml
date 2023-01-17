@@ -1,22 +1,23 @@
 trigger:
-  branches:
-    include:
-    - main
-    - master
+- main
+- master
 
 pool:
   vmImage: windows-latest
 
 steps:
-- task: NodeTool@0
+- task: UseNode@1
   inputs:
-    versionSpec: 14.x
-  displayName: 'Use Node.js 14.x'
-
+    version: '16.x'
+  displayName: 'Use Node.js 16.x'
 - script: |
-    npx playwright install 
-  displayName: 'Install Playwright'
-
-- script: |
+    npm ci
+    npx playwright install --with-deps
     npx playwright test --browser=all
   displayName: 'Run Playwright tests on all browsers'
+  
+- task: PublishHtmlReport@1
+  displayName: Publish Html Report
+  inputs:
+      tabName: Playwright Report
+      reportDir: playwright-report/windows/index.html
