@@ -1,20 +1,17 @@
-jobs:
-    - deployment: Run_E2E_Tests
-      pool:
-        vmImage: ubuntu-20.04
-      container: mcr.microsoft.com/playwright:v1.29.0-focal
-      environment: testing
-      strategy:
-        runOnce:
-          deploy:
-            steps:
-            - checkout: self
-            - task: Bash@3
-              displayName: 'Run Playwright tests'
-              inputs:
-                workingDirectory: 'my-e2e-tests'
-                targetType: 'inline'
-                failOnStderr: true
-                script: |
-                  npm ci
-                  npx playwright test
+trigger:
+  - main
+  - master
+
+pool:
+  vmImage: windows-latest
+
+steps:
+  - task: UseNode@1
+    inputs:
+      version: "16.x"
+    displayName: "Use Node.js 16.x"
+  - script: |
+      npm ci
+      npx playwright install --with-deps
+      npx playwright test --browser=all
+    displayName: "Run Playwright tests on all browsers"
