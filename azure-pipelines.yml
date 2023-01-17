@@ -1,29 +1,39 @@
-trigger:
-- main
+variables:
+- name: BuildParameters.workingDirectory
+  value: ''
+- name: BuildParameters.workingDir
+  value: ''
+resources:
+  repositories:
+  - repository: self
+    type: git
+    ref: refs/heads/main
 
-pool:
-  vmImage: 'ubuntu-latest'
+jobs:
+  - job: Job_1
+    displayName: "Run Test"
+    pool:
+      vmImage: windows-lates
+    steps:
+      - checkout: self
+        clean: true
+        fetchTags: false
+      - task: NodeTool@0
+        displayName: Node Installation
+        inputs:
+          versionSpec: 16.x
+      - task: CmdLine@2
+        displayName: Install PlayWright
+        inputs:
+          script: npm i && npx playwright install
+          workingDirectory: $(BuildParameters.workingDirectory)
+      - task: CmdLine@2
+        displayName: Execute Test
+        inputs:
+          script: npx playwright test --browser=all
 
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '16.x'
-  displayName: 'Install Node.js'
-
-- script: |
-    npm install
-  displayName: 'npm install'
-
-- script: |
-    npm run build
-  displayName: 'npm build'
-
-- task: CopyFiles@2
-  inputs:
-    Contents: 'build/**' # Pull the build directory (React)
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
-
-- task: PublishBuildArtifacts@1
-  inputs: 
-    PathtoPublish: $(Build.ArtifactStagingDirectory) # dist or build files
-    ArtifactName: 'www' # output artifact named www
+      - task: PublishHtmlReport@1
+        displayName: Publish Html Report
+        inputs:
+          tabName: Playwright Report
+          reportDir: playwright-report/windows/index.html

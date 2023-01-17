@@ -24,8 +24,8 @@ const config: PlaywrightTestConfig = {
   reporter: [['html',{outputFolder: './playwright-report/macos'}]],
   use: {
     headless: false,
-    storageState: "./auth.json",
-    navigationTimeout: 60000,
+    //storageState: "./auth.json",
+    //navigationTimeout: 60000,
   },
   
 };
