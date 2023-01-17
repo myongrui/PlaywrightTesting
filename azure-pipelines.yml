@@ -31,9 +31,9 @@ jobs:
         displayName: Execute Test
         inputs:
           script: npx playwright test --browser=all
-          
+
       - task: PublishHtmlReport@1
         displayName: Publish Html Report
         inputs:
           tabName: Playwright Report
-          reportDir: playwright-report/${{ matrix.vmImage }}/index.html
+          reportDir: playwright-report/windows/index.html
