@@ -23,7 +23,7 @@ const config: PlaywrightTestConfig = {
   retries: 0,
   reporter: [['html',{outputFolder: './playwright-report/default'}],["junit", { outputFile: "test-results/e2e-junit-results.xml" }]],
   use: {
-    headless: false,
+    headless: true,
     storageState: "./auth.json",
     navigationTimeout: 60000,
   },
