@@ -1,23 +1,29 @@
+name: Playwright Tests
 trigger:
-- main
-- master
-
-pool:
-  vmImage: windows-latest
-
-steps:
-- task: UseNode@1
-  inputs:
-    version: '16.x'
-  displayName: 'Use Node.js 16.x'
-- script: |
-    npm ci
-    npx playwright install --with-deps
-    npx playwright test --browser=all
-  displayName: 'Run Playwright tests on all browsers'
-  
-- task: PublishHtmlReport@1
-  displayName: Publish Html Report
-  inputs:
-      tabName: Playwright Report
-      reportDir: playwright-report/windows/index.html
+  - main
+  - master
+jobs:
+  - job: test
+    timeoutInMinutes: 60
+    pool:
+      vmImage: "ubuntu-latest"
+    steps:
+      - task: NodeTool@0
+        inputs:
+          versionSpec: "16.x"
+        displayName: "Install Node.js"
+      - script: |
+          npm ci
+        displayName: "Install dependencies"
+      - script: |
+          npx playwright install --with-deps
+        displayName: "Install Playwright Browsers"
+      - script: |
+          npx playwright test
+        displayName: "Run Playwright tests"
+      - task: PublishHtmlReport@1
+        displayName: Publish Html Report
+        inputs:
+          tabName: Playwright Report
+          reportDir: playwright-report/windows/index.html
+        
