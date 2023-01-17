@@ -19,9 +19,11 @@ jobs:
           npx playwright install --with-deps
         displayName: "Install Playwright Browsers"
       - script: |
-          npx playwright test
+          npx playwright test --browser=all --headless=true
         displayName: "Run Playwright tests"
-      - publish: $(System.DefaultWorkingDirectory)/playwright-report
-        artifact: playwright-report
-        # always create the artifact, this is useful for debugging failed tests
-        condition: always()
+      - task: PublishHtmlReport@1
+        displayName: Publish Html Report
+        inputs:
+          tabName: Playwright Report
+          reportDir: playwright-report/windows/index.html
+        
