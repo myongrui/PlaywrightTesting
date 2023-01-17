@@ -19,7 +19,7 @@ jobs:
           npx playwright install --with-deps
         displayName: "Install Playwright Browsers"
       - script: |
-          npx playwright test --browser=all --headless
+          npx playwright test --browser=all
         displayName: "Run Playwright tests"
       - task: PublishHtmlReport@1
         displayName: Publish Html Report
