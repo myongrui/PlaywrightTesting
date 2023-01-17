@@ -10,14 +10,22 @@ steps:
   inputs:
     version: '16.x'
   displayName: 'Use Node.js 16.x'
+
 - script: |
     npm ci
     npx playwright install --with-deps
     npx playwright test --browser=all
   displayName: 'Run Playwright tests on all browsers'
+
+- task: PublishTestResults@2
+  inputs:
+    testRunner: JUnit
+    testResultsFiles: '**/TEST-*.xml'
+    searchFolder: 'playwright-test-results'
+  displayName: 'Publish test results'
   
 - task: PublishHtmlReport@1
-  displayName: Publish Html Report
+  displayName: 'Publish Html Report'
   inputs:
       tabName: Playwright Report
       reportDir: playwright-report/windows/index.html
