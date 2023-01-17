@@ -1,17 +1,39 @@
-trigger:
-  - main
-  - master
+strategy:
+  matrix:
+    windows:
+      vmImage: windows-latest
+    ubuntu:
+      vmImage: ubuntu-latest
+    macos:
+      vmImage: macos-latest
 
-pool:
-  vmImage: windows-latest
-
-steps:
-  - task: UseNode@1
-    inputs:
-      version: "16.x"
-    displayName: "Use Node.js 16.x"
-  - script: |
-      npm ci
-      npx playwright install --with-deps
-      npx playwright test --browser=all
-    displayName: "Run Playwright tests on all browsers"
+jobs:
+  - job: Job_1
+    displayName: "Run Test"
+    pool:
+      vmImage: ${{ matrix.vmImage }}
+    steps:
+      - checkout: self
+        clean: true
+        fetchTags: false
+      - task: NodeTool@0
+        displayName: Node Installation
+        inputs:
+          versionSpec: 16.x
+      - task: CmdLine@2
+        displayName: Install PlayWright
+        inputs:
+          script: npm i && npx playwright install
+          workingDirectory: $(BuildParameters.workingDirectory)
+      - task: Npm@1
+        displayName: Execute Test
+        inputs:
+          command: custom
+          workingDir: $(BuildParameters.workingDir)
+          verbose: false
+          customCommand: run windowtest
+      - task: PublishHtmlReport@1
+        displayName: Publish Html Report
+        inputs:
+          tabName: Playwright Report
+          reportDir: playwright-report/${{ matrix.vmImage }}/index.html
