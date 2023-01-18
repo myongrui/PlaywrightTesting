@@ -1,24 +1,52 @@
-<testsuites id="" name="" tests="128" failures="65" skipped="0" errors="0" time="243.35494400000573">
-<testsuite name="tests\MercuryAvailabilityTest.spec.js" timestamp="1674008497275" hostname="" tests="7" failures="0" skipped="0" time="25.521" errors="0">
-<testcase name="01.If Home page Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 01.If Home page Available" time="4.138">
+<testsuites id="" name="" tests="128" failures="66" skipped="0" errors="0" time="248.19546099999548">
+<testsuite name="tests\MercuryAvailabilityTest.spec.js" timestamp="1674009963863" hostname="" tests="7" failures="1" skipped="0" time="18.937" errors="0">
+<testcase name="01.If Home page Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 01.If Home page Available" time="3.343">
 </testcase>
-<testcase name="02.If Transaction button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 02.If Transaction button Available" time="6.865">
+<testcase name="02.If Transaction button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 02.If Transaction button Available" time="3.156">
+<failure message="MercuryAvailabilityTest.spec.js:7:5 02.If Transaction button Available" type="FAILURE">
+<![CDATA[  [chromium] › tests\MercuryAvailabilityTest.spec.js:7:5 › 02.If Transaction button Available ======
+
+    locator.click: Error: strict mode violation: getByRole('link', { name: 'Transactions' }) resolved to 3 elements:
+        1) <a href="/transactions" class="styles__link_eiRKS s…>Transactions</a> aka getByRole('link', { name: 'Transactions' }).filter({ hasText: 'Transactions' })
+        2) <a aria-label="View all outgoing transactions" href…>View All</a> aka getByRole('link', { name: 'View all outgoing transactions' })
+        3) <a aria-label="View all incoming transactions" href…>View All</a> aka getByRole('link', { name: 'View all incoming transactions' })
+
+    =========================== logs ===========================
+    waiting for getByRole('link', { name: 'Transactions' })
+      strict mode violation: getByRole('link', { name: 'Transactions' }) resolved to 3 elements:
+        1) <a href="/transactions" class="styles__link_eiRKS s…>Transactions</a> aka getByRole('link', { name: 'Transactions' }).filter({ hasText: 'Transactions' })
+        2) <a aria-label="View all outgoing transactions" href…>View All</a> aka getByRole('link', { name: 'View all outgoing transactions' })
+        3) <a aria-label="View all incoming transactions" href…>View All</a> aka getByRole('link', { name: 'View all incoming transactions' })
+
+    ============================================================
+
+       7 | test('02.If Transaction button Available', async ({ page }) => {
+       8 |     await page.goto('https://demo.mercury.com/dashboard');
+    >  9 |     await page.getByRole('link', { name: 'Transactions' }).click();
+         |                                                            ^
+      10 |     await expect(page).toHaveURL('https://demo.mercury.com/transactions')
+      11 | })
+      12 | test('03.If Payment button Available', async ({ page }) => {
+
+        at C:\Users\Mar Yong Rui\OneDrive - Ngee Ann Polytechnic\Documents\School Stuff\PFD\PlaywrightTesting\tests\MercuryAvailabilityTest.spec.js:9:60
+]]>
+</failure>
 </testcase>
-<testcase name="03.If Payment button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 03.If Payment button Available" time="2.669">
+<testcase name="03.If Payment button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 03.If Payment button Available" time="2.787">
 </testcase>
-<testcase name="04.If Cards button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 04.If Cards button Available" time="2.406">
+<testcase name="04.If Cards button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 04.If Cards button Available" time="2.315">
 </testcase>
-<testcase name="05.If Credit button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 05.If Credit button Available" time="3.615">
+<testcase name="05.If Credit button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 05.If Credit button Available" time="2.258">
 </testcase>
-<testcase name="06.If Tresury button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 06.If Tresury button Available" time="2.83">
+<testcase name="06.If Tresury button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 06.If Tresury button Available" time="2.652">
 </testcase>
-<testcase name="07.If Capital button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 07.If Capital button Available" time="2.998">
+<testcase name="07.If Capital button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 07.If Capital button Available" time="2.426">
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryCardsTest.spec.js" timestamp="1674008497275" hostname="" tests="5" failures="3" skipped="0" time="82.746" errors="0">
-<testcase name="20. If cards page available" classname="[chromium] › tests\MercuryCardsTest.spec.js › 20. If cards page available" time="10.278">
+<testsuite name="tests\MercuryCardsTest.spec.js" timestamp="1674009963863" hostname="" tests="5" failures="3" skipped="0" time="74.129" errors="0">
+<testcase name="20. If cards page available" classname="[chromium] › tests\MercuryCardsTest.spec.js › 20. If cards page available" time="3.17">
 </testcase>
-<testcase name="21. Issue new standard card" classname="[chromium] › tests\MercuryCardsTest.spec.js › 21. Issue new standard card" time="30.013">
+<testcase name="21. Issue new standard card" classname="[chromium] › tests\MercuryCardsTest.spec.js › 21. Issue new standard card" time="30">
 <failure message="MercuryCardsTest.spec.js:8:5 21. Issue new standard card" type="FAILURE">
 <![CDATA[  [chromium] › tests\MercuryCardsTest.spec.js:8:5 › 21. Issue new standard card ====================
 
@@ -45,7 +73,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="22. Issue new merchant card" classname="[chromium] › tests\MercuryCardsTest.spec.js › 22. Issue new merchant card" time="29.998">
+<testcase name="22. Issue new merchant card" classname="[chromium] › tests\MercuryCardsTest.spec.js › 22. Issue new merchant card" time="30.012">
 <failure message="MercuryCardsTest.spec.js:20:7 22. Issue new merchant card" type="FAILURE">
 <![CDATA[  [chromium] › tests\MercuryCardsTest.spec.js:20:7 › 22. Issue new merchant card ===================
 
@@ -72,7 +100,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="23. Card filter test" classname="[chromium] › tests\MercuryCardsTest.spec.js › 23. Card filter test" time="8.109">
+<testcase name="23. Card filter test" classname="[chromium] › tests\MercuryCardsTest.spec.js › 23. Card filter test" time="7.669">
 <failure message="MercuryCardsTest.spec.js:36:7 23. Card filter test" type="FAILURE">
 <![CDATA[  [chromium] › tests\MercuryCardsTest.spec.js:36:7 › 23. Card filter test ==========================
 
@@ -116,19 +144,19 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="24. Card details and reveal" classname="[chromium] › tests\MercuryCardsTest.spec.js › 24. Card details and reveal" time="4.348">
+<testcase name="24. Card details and reveal" classname="[chromium] › tests\MercuryCardsTest.spec.js › 24. Card details and reveal" time="3.278">
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryCreditTest.spec.js" timestamp="1674008497275" hostname="" tests="2" failures="0" skipped="0" time="26.48" errors="0">
-<testcase name="25. Credit Page available" classname="[chromium] › tests\MercuryCreditTest.spec.js › 25. Credit Page available" time="13.885">
+<testsuite name="tests\MercuryCreditTest.spec.js" timestamp="1674009963863" hostname="" tests="2" failures="0" skipped="0" time="6.221" errors="0">
+<testcase name="25. Credit Page available" classname="[chromium] › tests\MercuryCreditTest.spec.js › 25. Credit Page available" time="2.754">
 </testcase>
-<testcase name="26. Credit pay" classname="[chromium] › tests\MercuryCreditTest.spec.js › 26. Credit pay" time="12.595">
+<testcase name="26. Credit pay" classname="[chromium] › tests\MercuryCreditTest.spec.js › 26. Credit pay" time="3.467">
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryHomeTest.spec.js" timestamp="1674008497275" hostname="" tests="6" failures="2" skipped="0" time="59.824" errors="0">
-<testcase name="08.If signed in" classname="[chromium] › tests\MercuryHomeTest.spec.js › 08.If signed in" time="11.067">
+<testsuite name="tests\MercuryHomeTest.spec.js" timestamp="1674009963863" hostname="" tests="6" failures="2" skipped="0" time="51.28" errors="0">
+<testcase name="08.If signed in" classname="[chromium] › tests\MercuryHomeTest.spec.js › 08.If signed in" time="3.468">
 </testcase>
-<testcase name="09. If Move money works" classname="[chromium] › tests\MercuryHomeTest.spec.js › 09. If Move money works" time="30">
+<testcase name="09. If Move money works" classname="[chromium] › tests\MercuryHomeTest.spec.js › 09. If Move money works" time="30.005">
 <failure message="MercuryHomeTest.spec.js:9:5 09. If Move money works" type="FAILURE">
 <![CDATA[  [chromium] › tests\MercuryHomeTest.spec.js:9:5 › 09. If Move money works =========================
 
@@ -155,13 +183,13 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="10. Add fund" classname="[chromium] › tests\MercuryHomeTest.spec.js › 10. Add fund" time="4.156">
+<testcase name="10. Add fund" classname="[chromium] › tests\MercuryHomeTest.spec.js › 10. Add fund" time="3.577">
 </testcase>
-<testcase name="11. Payment Request" classname="[chromium] › tests\MercuryHomeTest.spec.js › 11. Payment Request" time="4.55">
+<testcase name="11. Payment Request" classname="[chromium] › tests\MercuryHomeTest.spec.js › 11. Payment Request" time="3.947">
 </testcase>
-<testcase name="12. Transfer Between Accounts" classname="[chromium] › tests\MercuryHomeTest.spec.js › 12. Transfer Between Accounts" time="3.103">
+<testcase name="12. Transfer Between Accounts" classname="[chromium] › tests\MercuryHomeTest.spec.js › 12. Transfer Between Accounts" time="3.311">
 </testcase>
-<testcase name="13. Search Bar Function" classname="[chromium] › tests\MercuryHomeTest.spec.js › 13. Search Bar Function" time="6.948">
+<testcase name="13. Search Bar Function" classname="[chromium] › tests\MercuryHomeTest.spec.js › 13. Search Bar Function" time="6.972">
 <failure message="MercuryHomeTest.spec.js:85:7 13. Search Bar Function" type="FAILURE">
 <![CDATA[  [chromium] › tests\MercuryHomeTest.spec.js:85:7 › 13. Search Bar Function ========================
 
@@ -188,10 +216,10 @@
 </failure>
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryPaymentTest.spec.js" timestamp="1674008497275" hostname="" tests="6" failures="2" skipped="0" time="38.848" errors="0">
-<testcase name="14. Payment Page available" classname="[chromium] › tests\MercuryPaymentTest.spec.js › 14. Payment Page available" time="10.222">
+<testsuite name="tests\MercuryPaymentTest.spec.js" timestamp="1674009963863" hostname="" tests="6" failures="2" skipped="0" time="27.426" errors="0">
+<testcase name="14. Payment Page available" classname="[chromium] › tests\MercuryPaymentTest.spec.js › 14. Payment Page available" time="2.927">
 </testcase>
-<testcase name="15. Incoming Payment" classname="[chromium] › tests\MercuryPaymentTest.spec.js › 15. Incoming Payment" time="8.917">
+<testcase name="15. Incoming Payment" classname="[chromium] › tests\MercuryPaymentTest.spec.js › 15. Incoming Payment" time="3.891">
 <failure message="MercuryPaymentTest.spec.js:8:5 15. Incoming Payment" type="FAILURE">
 <![CDATA[  [chromium] › tests\MercuryPaymentTest.spec.js:8:5 › 15. Incoming Payment =========================
 
@@ -209,13 +237,13 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="16. Recipents Page" classname="[chromium] › tests\MercuryPaymentTest.spec.js › 16. Recipents Page" time="2.677">
+<testcase name="16. Recipents Page" classname="[chromium] › tests\MercuryPaymentTest.spec.js › 16. Recipents Page" time="2.454">
 </testcase>
-<testcase name="17. Recipents Details" classname="[chromium] › tests\MercuryPaymentTest.spec.js › 17. Recipents Details" time="2.507">
+<testcase name="17. Recipents Details" classname="[chromium] › tests\MercuryPaymentTest.spec.js › 17. Recipents Details" time="3.08">
 </testcase>
-<testcase name="18. Recipents request payment" classname="[chromium] › tests\MercuryPaymentTest.spec.js › 18. Recipents request payment" time="4.846">
+<testcase name="18. Recipents request payment" classname="[chromium] › tests\MercuryPaymentTest.spec.js › 18. Recipents request payment" time="5.531">
 </testcase>
-<testcase name="19. Send Payment" classname="[chromium] › tests\MercuryPaymentTest.spec.js › 19. Send Payment" time="9.679">
+<testcase name="19. Send Payment" classname="[chromium] › tests\MercuryPaymentTest.spec.js › 19. Send Payment" time="9.543">
 <failure message="MercuryPaymentTest.spec.js:47:7 19. Send Payment" type="FAILURE">
 <![CDATA[  [chromium] › tests\MercuryPaymentTest.spec.js:47:7 › 19. Send Payment ============================
 
@@ -252,8 +280,8 @@
 </failure>
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryTransactionTest.spec.js" timestamp="1674008497275" hostname="" tests="2" failures="2" skipped="0" time="40.798" errors="0">
-<testcase name="14. is Transaction filters works" classname="[chromium] › tests\MercuryTransactionTest.spec.js › 14. is Transaction filters works" time="10.79">
+<testsuite name="tests\MercuryTransactionTest.spec.js" timestamp="1674009963863" hostname="" tests="2" failures="2" skipped="0" time="40.354" errors="0">
+<testcase name="14. is Transaction filters works" classname="[chromium] › tests\MercuryTransactionTest.spec.js › 14. is Transaction filters works" time="10.35">
 <failure message="MercuryTransactionTest.spec.js:3:5 14. is Transaction filters works" type="FAILURE">
 <![CDATA[  [chromium] › tests\MercuryTransactionTest.spec.js:3:5 › 14. is Transaction filters works =========
 
@@ -276,7 +304,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="15. view all transactions" classname="[chromium] › tests\MercuryTransactionTest.spec.js › 15. view all transactions" time="30.008">
+<testcase name="15. view all transactions" classname="[chromium] › tests\MercuryTransactionTest.spec.js › 15. view all transactions" time="30.004">
 <failure message="MercuryTransactionTest.spec.js:16:5 15. view all transactions" type="FAILURE">
 <![CDATA[  [chromium] › tests\MercuryTransactionTest.spec.js:16:5 › 15. view all transactions ===============
 
@@ -304,10 +332,10 @@
 </failure>
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryTreasuryTest.spec.js" timestamp="1674008497275" hostname="" tests="4" failures="3" skipped="0" time="39.627" errors="0">
-<testcase name="27. Treasury Page Available" classname="[chromium] › tests\MercuryTreasuryTest.spec.js › 27. Treasury Page Available" time="17.63">
+<testsuite name="tests\MercuryTreasuryTest.spec.js" timestamp="1674009963863" hostname="" tests="4" failures="3" skipped="0" time="24.915" errors="0">
+<testcase name="27. Treasury Page Available" classname="[chromium] › tests\MercuryTreasuryTest.spec.js › 27. Treasury Page Available" time="4.85">
 </testcase>
-<testcase name="28. Treasury Transfer In" classname="[chromium] › tests\MercuryTreasuryTest.spec.js › 28. Treasury Transfer In" time="10.259">
+<testcase name="28. Treasury Transfer In" classname="[chromium] › tests\MercuryTreasuryTest.spec.js › 28. Treasury Transfer In" time="8.545">
 <failure message="MercuryTreasuryTest.spec.js:8:5 28. Treasury Transfer In" type="FAILURE">
 <![CDATA[  [chromium] › tests\MercuryTreasuryTest.spec.js:8:5 › 28. Treasury Transfer In ====================
 
@@ -345,7 +373,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="29. Treasury Transfer out" classname="[chromium] › tests\MercuryTreasuryTest.spec.js › 29. Treasury Transfer out" time="8.619">
+<testcase name="29. Treasury Transfer out" classname="[chromium] › tests\MercuryTreasuryTest.spec.js › 29. Treasury Transfer out" time="8.129">
 <failure message="MercuryTreasuryTest.spec.js:22:5 29. Treasury Transfer out" type="FAILURE">
 <![CDATA[  [chromium] › tests\MercuryTreasuryTest.spec.js:22:5 › 29. Treasury Transfer out ==================
 
@@ -383,7 +411,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="30. Treasury Daily and Monthly filter" classname="[chromium] › tests\MercuryTreasuryTest.spec.js › 30. Treasury Daily and Monthly filter" time="3.119">
+<testcase name="30. Treasury Daily and Monthly filter" classname="[chromium] › tests\MercuryTreasuryTest.spec.js › 30. Treasury Daily and Monthly filter" time="3.391">
 <failure message="MercuryTreasuryTest.spec.js:36:5 30. Treasury Daily and Monthly filter" type="FAILURE">
 <![CDATA[  [chromium] › tests\MercuryTreasuryTest.spec.js:36:5 › 30. Treasury Daily and Monthly filter ======
 
@@ -417,10 +445,10 @@
 </failure>
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryAvailabilityTest.spec.js" timestamp="1674008497275" hostname="" tests="7" failures="6" skipped="0" time="184.189" errors="0">
-<testcase name="01.If Home page Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 01.If Home page Available" time="4.14">
+<testsuite name="tests\MercuryAvailabilityTest.spec.js" timestamp="1674009963863" hostname="" tests="7" failures="6" skipped="0" time="182.266" errors="0">
+<testcase name="01.If Home page Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 01.If Home page Available" time="2.242">
 </testcase>
-<testcase name="02.If Transaction button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 02.If Transaction button Available" time="30.009">
+<testcase name="02.If Transaction button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 02.If Transaction button Available" time="30.004">
 <failure message="MercuryAvailabilityTest.spec.js:7:5 02.If Transaction button Available" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryAvailabilityTest.spec.js:7:5 › 02.If Transaction button Available =========
 
@@ -447,7 +475,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="03.If Payment button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 03.If Payment button Available" time="30.006">
+<testcase name="03.If Payment button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 03.If Payment button Available" time="30.003">
 <failure message="MercuryAvailabilityTest.spec.js:12:5 03.If Payment button Available" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryAvailabilityTest.spec.js:12:5 › 03.If Payment button Available ============
 
@@ -474,7 +502,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="04.If Cards button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 04.If Cards button Available" time="30.006">
+<testcase name="04.If Cards button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 04.If Cards button Available" time="29.999">
 <failure message="MercuryAvailabilityTest.spec.js:17:5 04.If Cards button Available" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryAvailabilityTest.spec.js:17:5 › 04.If Cards button Available ==============
 
@@ -501,7 +529,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="05.If Credit button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 05.If Credit button Available" time="30.007">
+<testcase name="05.If Credit button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 05.If Credit button Available" time="30.009">
 <failure message="MercuryAvailabilityTest.spec.js:22:5 05.If Credit button Available" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryAvailabilityTest.spec.js:22:5 › 05.If Credit button Available =============
 
@@ -528,7 +556,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="06.If Tresury button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 06.If Tresury button Available" time="30.009">
+<testcase name="06.If Tresury button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 06.If Tresury button Available" time="30.002">
 <failure message="MercuryAvailabilityTest.spec.js:27:5 06.If Tresury button Available" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryAvailabilityTest.spec.js:27:5 › 06.If Tresury button Available ============
 
@@ -555,7 +583,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="07.If Capital button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 07.If Capital button Available" time="30.012">
+<testcase name="07.If Capital button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 07.If Capital button Available" time="30.007">
 <failure message="MercuryAvailabilityTest.spec.js:32:5 07.If Capital button Available" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryAvailabilityTest.spec.js:32:5 › 07.If Capital button Available ============
 
@@ -582,10 +610,10 @@
 </failure>
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryCardsTest.spec.js" timestamp="1674008497275" hostname="" tests="5" failures="4" skipped="0" time="123.811" errors="0">
-<testcase name="20. If cards page available" classname="[pixel] › tests\MercuryCardsTest.spec.js › 20. If cards page available" time="3.777">
+<testsuite name="tests\MercuryCardsTest.spec.js" timestamp="1674009963863" hostname="" tests="5" failures="4" skipped="0" time="124.257" errors="0">
+<testcase name="20. If cards page available" classname="[pixel] › tests\MercuryCardsTest.spec.js › 20. If cards page available" time="4.234">
 </testcase>
-<testcase name="21. Issue new standard card" classname="[pixel] › tests\MercuryCardsTest.spec.js › 21. Issue new standard card" time="30.014">
+<testcase name="21. Issue new standard card" classname="[pixel] › tests\MercuryCardsTest.spec.js › 21. Issue new standard card" time="30.011">
 <failure message="MercuryCardsTest.spec.js:8:5 21. Issue new standard card" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryCardsTest.spec.js:8:5 › 21. Issue new standard card =======================
 
@@ -612,7 +640,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="22. Issue new merchant card" classname="[pixel] › tests\MercuryCardsTest.spec.js › 22. Issue new merchant card" time="29.999">
+<testcase name="22. Issue new merchant card" classname="[pixel] › tests\MercuryCardsTest.spec.js › 22. Issue new merchant card" time="30.003">
 <failure message="MercuryCardsTest.spec.js:20:7 22. Issue new merchant card" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryCardsTest.spec.js:20:7 › 22. Issue new merchant card ======================
 
@@ -639,7 +667,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="23. Card filter test" classname="[pixel] › tests\MercuryCardsTest.spec.js › 23. Card filter test" time="30.014">
+<testcase name="23. Card filter test" classname="[pixel] › tests\MercuryCardsTest.spec.js › 23. Card filter test" time="30.005">
 <failure message="MercuryCardsTest.spec.js:36:7 23. Card filter test" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryCardsTest.spec.js:36:7 › 23. Card filter test =============================
 
@@ -666,7 +694,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="24. Card details and reveal" classname="[pixel] › tests\MercuryCardsTest.spec.js › 24. Card details and reveal" time="30.007">
+<testcase name="24. Card details and reveal" classname="[pixel] › tests\MercuryCardsTest.spec.js › 24. Card details and reveal" time="30.004">
 <failure message="MercuryCardsTest.spec.js:44:7 24. Card details and reveal" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryCardsTest.spec.js:44:7 › 24. Card details and reveal ======================
 
@@ -694,10 +722,10 @@
 </failure>
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryCreditTest.spec.js" timestamp="1674008497275" hostname="" tests="2" failures="1" skipped="0" time="31.861" errors="0">
-<testcase name="25. Credit Page available" classname="[pixel] › tests\MercuryCreditTest.spec.js › 25. Credit Page available" time="1.86">
+<testsuite name="tests\MercuryCreditTest.spec.js" timestamp="1674009963863" hostname="" tests="2" failures="1" skipped="0" time="31.772" errors="0">
+<testcase name="25. Credit Page available" classname="[pixel] › tests\MercuryCreditTest.spec.js › 25. Credit Page available" time="1.758">
 </testcase>
-<testcase name="26. Credit pay" classname="[pixel] › tests\MercuryCreditTest.spec.js › 26. Credit pay" time="30.001">
+<testcase name="26. Credit pay" classname="[pixel] › tests\MercuryCreditTest.spec.js › 26. Credit pay" time="30.014">
 <failure message="MercuryCreditTest.spec.js:8:5 26. Credit pay" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryCreditTest.spec.js:8:5 › 26. Credit pay ===================================
 
@@ -725,8 +753,8 @@
 </failure>
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryHomeTest.spec.js" timestamp="1674008497275" hostname="" tests="6" failures="6" skipped="0" time="157.822" errors="0">
-<testcase name="08.If signed in" classname="[pixel] › tests\MercuryHomeTest.spec.js › 08.If signed in" time="7.792">
+<testsuite name="tests\MercuryHomeTest.spec.js" timestamp="1674009963863" hostname="" tests="6" failures="6" skipped="0" time="157.634" errors="0">
+<testcase name="08.If signed in" classname="[pixel] › tests\MercuryHomeTest.spec.js › 08.If signed in" time="7.585">
 <failure message="MercuryHomeTest.spec.js:3:5 08.If signed in" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryHomeTest.spec.js:3:5 › 08.If signed in ====================================
 
@@ -752,7 +780,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="09. If Move money works" classname="[pixel] › tests\MercuryHomeTest.spec.js › 09. If Move money works" time="30.007">
+<testcase name="09. If Move money works" classname="[pixel] › tests\MercuryHomeTest.spec.js › 09. If Move money works" time="30.013">
 <failure message="MercuryHomeTest.spec.js:9:5 09. If Move money works" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryHomeTest.spec.js:9:5 › 09. If Move money works ============================
 
@@ -779,7 +807,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="10. Add fund" classname="[pixel] › tests\MercuryHomeTest.spec.js › 10. Add fund" time="30.009">
+<testcase name="10. Add fund" classname="[pixel] › tests\MercuryHomeTest.spec.js › 10. Add fund" time="30.004">
 <failure message="MercuryHomeTest.spec.js:35:5 10. Add fund" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryHomeTest.spec.js:35:5 › 10. Add fund ======================================
 
@@ -806,7 +834,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="11. Payment Request" classname="[pixel] › tests\MercuryHomeTest.spec.js › 11. Payment Request" time="30.004">
+<testcase name="11. Payment Request" classname="[pixel] › tests\MercuryHomeTest.spec.js › 11. Payment Request" time="30.011">
 <failure message="MercuryHomeTest.spec.js:52:7 11. Payment Request" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryHomeTest.spec.js:52:7 › 11. Payment Request ===============================
 
@@ -833,7 +861,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="12. Transfer Between Accounts" classname="[pixel] › tests\MercuryHomeTest.spec.js › 12. Transfer Between Accounts" time="30.003">
+<testcase name="12. Transfer Between Accounts" classname="[pixel] › tests\MercuryHomeTest.spec.js › 12. Transfer Between Accounts" time="30.014">
 <failure message="MercuryHomeTest.spec.js:69:7 12. Transfer Between Accounts" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryHomeTest.spec.js:69:7 › 12. Transfer Between Accounts =====================
 
@@ -888,10 +916,10 @@
 </failure>
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryPaymentTest.spec.js" timestamp="1674008497275" hostname="" tests="6" failures="5" skipped="0" time="152.063" errors="0">
-<testcase name="14. Payment Page available" classname="[pixel] › tests\MercuryPaymentTest.spec.js › 14. Payment Page available" time="2.04">
+<testsuite name="tests\MercuryPaymentTest.spec.js" timestamp="1674009963863" hostname="" tests="6" failures="5" skipped="0" time="151.767" errors="0">
+<testcase name="14. Payment Page available" classname="[pixel] › tests\MercuryPaymentTest.spec.js › 14. Payment Page available" time="1.732">
 </testcase>
-<testcase name="15. Incoming Payment" classname="[pixel] › tests\MercuryPaymentTest.spec.js › 15. Incoming Payment" time="30.006">
+<testcase name="15. Incoming Payment" classname="[pixel] › tests\MercuryPaymentTest.spec.js › 15. Incoming Payment" time="30.012">
 <failure message="MercuryPaymentTest.spec.js:8:5 15. Incoming Payment" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryPaymentTest.spec.js:8:5 › 15. Incoming Payment ============================
 
@@ -918,7 +946,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="16. Recipents Page" classname="[pixel] › tests\MercuryPaymentTest.spec.js › 16. Recipents Page" time="29.999">
+<testcase name="16. Recipents Page" classname="[pixel] › tests\MercuryPaymentTest.spec.js › 16. Recipents Page" time="30.007">
 <failure message="MercuryPaymentTest.spec.js:18:7 16. Recipents Page" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryPaymentTest.spec.js:18:7 › 16. Recipents Page =============================
 
@@ -945,7 +973,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="17. Recipents Details" classname="[pixel] › tests\MercuryPaymentTest.spec.js › 17. Recipents Details" time="30.008">
+<testcase name="17. Recipents Details" classname="[pixel] › tests\MercuryPaymentTest.spec.js › 17. Recipents Details" time="30.013">
 <failure message="MercuryPaymentTest.spec.js:24:7 17. Recipents Details" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryPaymentTest.spec.js:24:7 › 17. Recipents Details ==========================
 
@@ -999,7 +1027,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="19. Send Payment" classname="[pixel] › tests\MercuryPaymentTest.spec.js › 19. Send Payment" time="30.006">
+<testcase name="19. Send Payment" classname="[pixel] › tests\MercuryPaymentTest.spec.js › 19. Send Payment" time="29.999">
 <failure message="MercuryPaymentTest.spec.js:47:7 19. Send Payment" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryPaymentTest.spec.js:47:7 › 19. Send Payment ===============================
 
@@ -1027,7 +1055,7 @@
 </failure>
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryTransactionTest.spec.js" timestamp="1674008497275" hostname="" tests="2" failures="2" skipped="0" time="60.02" errors="0">
+<testsuite name="tests\MercuryTransactionTest.spec.js" timestamp="1674009963863" hostname="" tests="2" failures="2" skipped="0" time="60.017" errors="0">
 <testcase name="14. is Transaction filters works" classname="[pixel] › tests\MercuryTransactionTest.spec.js › 14. is Transaction filters works" time="30.006">
 <failure message="MercuryTransactionTest.spec.js:3:5 14. is Transaction filters works" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryTransactionTest.spec.js:3:5 › 14. is Transaction filters works ============
@@ -1055,7 +1083,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="15. view all transactions" classname="[pixel] › tests\MercuryTransactionTest.spec.js › 15. view all transactions" time="30.014">
+<testcase name="15. view all transactions" classname="[pixel] › tests\MercuryTransactionTest.spec.js › 15. view all transactions" time="30.011">
 <failure message="MercuryTransactionTest.spec.js:16:5 15. view all transactions" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryTransactionTest.spec.js:16:5 › 15. view all transactions ==================
 
@@ -1083,10 +1111,10 @@
 </failure>
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryTreasuryTest.spec.js" timestamp="1674008497275" hostname="" tests="4" failures="3" skipped="0" time="92.11" errors="0">
-<testcase name="27. Treasury Page Available" classname="[pixel] › tests\MercuryTreasuryTest.spec.js › 27. Treasury Page Available" time="2.088">
+<testsuite name="tests\MercuryTreasuryTest.spec.js" timestamp="1674009963863" hostname="" tests="4" failures="3" skipped="0" time="91.995" errors="0">
+<testcase name="27. Treasury Page Available" classname="[pixel] › tests\MercuryTreasuryTest.spec.js › 27. Treasury Page Available" time="1.974">
 </testcase>
-<testcase name="28. Treasury Transfer In" classname="[pixel] › tests\MercuryTreasuryTest.spec.js › 28. Treasury Transfer In" time="30.007">
+<testcase name="28. Treasury Transfer In" classname="[pixel] › tests\MercuryTreasuryTest.spec.js › 28. Treasury Transfer In" time="30.001">
 <failure message="MercuryTreasuryTest.spec.js:8:5 28. Treasury Transfer In" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryTreasuryTest.spec.js:8:5 › 28. Treasury Transfer In =======================
 
@@ -1113,7 +1141,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="29. Treasury Transfer out" classname="[pixel] › tests\MercuryTreasuryTest.spec.js › 29. Treasury Transfer out" time="30.013">
+<testcase name="29. Treasury Transfer out" classname="[pixel] › tests\MercuryTreasuryTest.spec.js › 29. Treasury Transfer out" time="30.006">
 <failure message="MercuryTreasuryTest.spec.js:22:5 29. Treasury Transfer out" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryTreasuryTest.spec.js:22:5 › 29. Treasury Transfer out =====================
 
@@ -1140,7 +1168,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="30. Treasury Daily and Monthly filter" classname="[pixel] › tests\MercuryTreasuryTest.spec.js › 30. Treasury Daily and Monthly filter" time="30.002">
+<testcase name="30. Treasury Daily and Monthly filter" classname="[pixel] › tests\MercuryTreasuryTest.spec.js › 30. Treasury Daily and Monthly filter" time="30.014">
 <failure message="MercuryTreasuryTest.spec.js:36:5 30. Treasury Daily and Monthly filter" type="FAILURE">
 <![CDATA[  [pixel] › tests\MercuryTreasuryTest.spec.js:36:5 › 30. Treasury Daily and Monthly filter =========
 
@@ -1168,26 +1196,26 @@
 </failure>
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryAvailabilityTest.spec.js" timestamp="1674008497275" hostname="" tests="7" failures="0" skipped="0" time="15.934" errors="0">
-<testcase name="01.If Home page Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 01.If Home page Available" time="2.525">
+<testsuite name="tests\MercuryAvailabilityTest.spec.js" timestamp="1674009963863" hostname="" tests="7" failures="0" skipped="0" time="18.639" errors="0">
+<testcase name="01.If Home page Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 01.If Home page Available" time="4.923">
 </testcase>
-<testcase name="02.If Transaction button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 02.If Transaction button Available" time="2.192">
+<testcase name="02.If Transaction button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 02.If Transaction button Available" time="2.071">
 </testcase>
-<testcase name="03.If Payment button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 03.If Payment button Available" time="2.033">
+<testcase name="03.If Payment button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 03.If Payment button Available" time="2.233">
 </testcase>
-<testcase name="04.If Cards button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 04.If Cards button Available" time="2.112">
+<testcase name="04.If Cards button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 04.If Cards button Available" time="2.165">
 </testcase>
-<testcase name="05.If Credit button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 05.If Credit button Available" time="2.117">
+<testcase name="05.If Credit button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 05.If Credit button Available" time="2.268">
 </testcase>
-<testcase name="06.If Tresury button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 06.If Tresury button Available" time="2.064">
+<testcase name="06.If Tresury button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 06.If Tresury button Available" time="2.023">
 </testcase>
-<testcase name="07.If Capital button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 07.If Capital button Available" time="2.891">
+<testcase name="07.If Capital button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 07.If Capital button Available" time="2.956">
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryCardsTest.spec.js" timestamp="1674008497275" hostname="" tests="5" failures="3" skipped="0" time="75.29" errors="0">
-<testcase name="20. If cards page available" classname="[firefox] › tests\MercuryCardsTest.spec.js › 20. If cards page available" time="2.621">
+<testsuite name="tests\MercuryCardsTest.spec.js" timestamp="1674009963863" hostname="" tests="5" failures="3" skipped="0" time="75.9" errors="0">
+<testcase name="20. If cards page available" classname="[firefox] › tests\MercuryCardsTest.spec.js › 20. If cards page available" time="2.798">
 </testcase>
-<testcase name="21. Issue new standard card" classname="[firefox] › tests\MercuryCardsTest.spec.js › 21. Issue new standard card" time="30.012">
+<testcase name="21. Issue new standard card" classname="[firefox] › tests\MercuryCardsTest.spec.js › 21. Issue new standard card" time="30.011">
 <failure message="MercuryCardsTest.spec.js:8:5 21. Issue new standard card" type="FAILURE">
 <![CDATA[  [firefox] › tests\MercuryCardsTest.spec.js:8:5 › 21. Issue new standard card =====================
 
@@ -1241,7 +1269,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="23. Card filter test" classname="[firefox] › tests\MercuryCardsTest.spec.js › 23. Card filter test" time="8.36">
+<testcase name="23. Card filter test" classname="[firefox] › tests\MercuryCardsTest.spec.js › 23. Card filter test" time="8.375">
 <failure message="MercuryCardsTest.spec.js:36:7 23. Card filter test" type="FAILURE">
 <![CDATA[  [firefox] › tests\MercuryCardsTest.spec.js:36:7 › 23. Card filter test ===========================
 
@@ -1255,8 +1283,6 @@
       -   locator resolved to <li tabindex="0" role="button" class="styles__tag_h2…>…</li>
       -   unexpected value "Credit Cards"
       - waiting for getByRole('button', { name: 'Credit Cards Remove Tag' })
-      -   locator resolved to <li tabindex="0" role="button" class="styles__tag_h2…>…</li>
-      -   unexpected value "Credit Cards"
       -   locator resolved to <li tabindex="0" role="button" class="styles__tag_h2…>…</li>
       -   unexpected value "Credit Cards"
       -   locator resolved to <li tabindex="0" role="button" class="styles__tag_h2…>…</li>
@@ -1285,13 +1311,13 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="24. Card details and reveal" classname="[firefox] › tests\MercuryCardsTest.spec.js › 24. Card details and reveal" time="4.285">
+<testcase name="24. Card details and reveal" classname="[firefox] › tests\MercuryCardsTest.spec.js › 24. Card details and reveal" time="4.704">
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryCreditTest.spec.js" timestamp="1674008497275" hostname="" tests="2" failures="1" skipped="0" time="32.947" errors="0">
-<testcase name="25. Credit Page available" classname="[firefox] › tests\MercuryCreditTest.spec.js › 25. Credit Page available" time="2.933">
+<testsuite name="tests\MercuryCreditTest.spec.js" timestamp="1674009963863" hostname="" tests="2" failures="1" skipped="0" time="33.518" errors="0">
+<testcase name="25. Credit Page available" classname="[firefox] › tests\MercuryCreditTest.spec.js › 25. Credit Page available" time="3.506">
 </testcase>
-<testcase name="26. Credit pay" classname="[firefox] › tests\MercuryCreditTest.spec.js › 26. Credit pay" time="30.014">
+<testcase name="26. Credit pay" classname="[firefox] › tests\MercuryCreditTest.spec.js › 26. Credit pay" time="30.012">
 <failure message="MercuryCreditTest.spec.js:8:5 26. Credit pay" type="FAILURE">
 <![CDATA[  [firefox] › tests\MercuryCreditTest.spec.js:8:5 › 26. Credit pay =================================
 
@@ -1319,10 +1345,10 @@
 </failure>
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryHomeTest.spec.js" timestamp="1674008497275" hostname="" tests="6" failures="2" skipped="0" time="51.654" errors="0">
-<testcase name="08.If signed in" classname="[firefox] › tests\MercuryHomeTest.spec.js › 08.If signed in" time="2.936">
+<testsuite name="tests\MercuryHomeTest.spec.js" timestamp="1674009963863" hostname="" tests="6" failures="2" skipped="0" time="56.738" errors="0">
+<testcase name="08.If signed in" classname="[firefox] › tests\MercuryHomeTest.spec.js › 08.If signed in" time="3.57">
 </testcase>
-<testcase name="09. If Move money works" classname="[firefox] › tests\MercuryHomeTest.spec.js › 09. If Move money works" time="30.004">
+<testcase name="09. If Move money works" classname="[firefox] › tests\MercuryHomeTest.spec.js › 09. If Move money works" time="30.012">
 <failure message="MercuryHomeTest.spec.js:9:5 09. If Move money works" type="FAILURE">
 <![CDATA[  [firefox] › tests\MercuryHomeTest.spec.js:9:5 › 09. If Move money works ==========================
 
@@ -1349,13 +1375,13 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="10. Add fund" classname="[firefox] › tests\MercuryHomeTest.spec.js › 10. Add fund" time="3.906">
+<testcase name="10. Add fund" classname="[firefox] › tests\MercuryHomeTest.spec.js › 10. Add fund" time="4.905">
 </testcase>
-<testcase name="11. Payment Request" classname="[firefox] › tests\MercuryHomeTest.spec.js › 11. Payment Request" time="4.3">
+<testcase name="11. Payment Request" classname="[firefox] › tests\MercuryHomeTest.spec.js › 11. Payment Request" time="5.521">
 </testcase>
-<testcase name="12. Transfer Between Accounts" classname="[firefox] › tests\MercuryHomeTest.spec.js › 12. Transfer Between Accounts" time="3.351">
+<testcase name="12. Transfer Between Accounts" classname="[firefox] › tests\MercuryHomeTest.spec.js › 12. Transfer Between Accounts" time="4.61">
 </testcase>
-<testcase name="13. Search Bar Function" classname="[firefox] › tests\MercuryHomeTest.spec.js › 13. Search Bar Function" time="7.157">
+<testcase name="13. Search Bar Function" classname="[firefox] › tests\MercuryHomeTest.spec.js › 13. Search Bar Function" time="8.12">
 <failure message="MercuryHomeTest.spec.js:85:7 13. Search Bar Function" type="FAILURE">
 <![CDATA[  [firefox] › tests\MercuryHomeTest.spec.js:85:7 › 13. Search Bar Function =========================
 
@@ -1382,10 +1408,10 @@
 </failure>
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryPaymentTest.spec.js" timestamp="1674008497275" hostname="" tests="6" failures="2" skipped="0" time="27.393" errors="0">
-<testcase name="14. Payment Page available" classname="[firefox] › tests\MercuryPaymentTest.spec.js › 14. Payment Page available" time="2.287">
+<testsuite name="tests\MercuryPaymentTest.spec.js" timestamp="1674009963863" hostname="" tests="6" failures="2" skipped="0" time="27.942" errors="0">
+<testcase name="14. Payment Page available" classname="[firefox] › tests\MercuryPaymentTest.spec.js › 14. Payment Page available" time="2.939">
 </testcase>
-<testcase name="15. Incoming Payment" classname="[firefox] › tests\MercuryPaymentTest.spec.js › 15. Incoming Payment" time="3.621">
+<testcase name="15. Incoming Payment" classname="[firefox] › tests\MercuryPaymentTest.spec.js › 15. Incoming Payment" time="3.071">
 <failure message="MercuryPaymentTest.spec.js:8:5 15. Incoming Payment" type="FAILURE">
 <![CDATA[  [firefox] › tests\MercuryPaymentTest.spec.js:8:5 › 15. Incoming Payment ==========================
 
@@ -1403,13 +1429,13 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="16. Recipents Page" classname="[firefox] › tests\MercuryPaymentTest.spec.js › 16. Recipents Page" time="3.64">
+<testcase name="16. Recipents Page" classname="[firefox] › tests\MercuryPaymentTest.spec.js › 16. Recipents Page" time="3.741">
 </testcase>
-<testcase name="17. Recipents Details" classname="[firefox] › tests\MercuryPaymentTest.spec.js › 17. Recipents Details" time="2.74">
+<testcase name="17. Recipents Details" classname="[firefox] › tests\MercuryPaymentTest.spec.js › 17. Recipents Details" time="3.009">
 </testcase>
-<testcase name="18. Recipents request payment" classname="[firefox] › tests\MercuryPaymentTest.spec.js › 18. Recipents request payment" time="4.372">
+<testcase name="18. Recipents request payment" classname="[firefox] › tests\MercuryPaymentTest.spec.js › 18. Recipents request payment" time="5.044">
 </testcase>
-<testcase name="19. Send Payment" classname="[firefox] › tests\MercuryPaymentTest.spec.js › 19. Send Payment" time="10.733">
+<testcase name="19. Send Payment" classname="[firefox] › tests\MercuryPaymentTest.spec.js › 19. Send Payment" time="10.138">
 <failure message="MercuryPaymentTest.spec.js:47:7 19. Send Payment" type="FAILURE">
 <![CDATA[  [firefox] › tests\MercuryPaymentTest.spec.js:47:7 › 19. Send Payment =============================
 
@@ -1446,8 +1472,8 @@
 </failure>
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryTransactionTest.spec.js" timestamp="1674008497275" hostname="" tests="2" failures="2" skipped="0" time="41.124" errors="0">
-<testcase name="14. is Transaction filters works" classname="[firefox] › tests\MercuryTransactionTest.spec.js › 14. is Transaction filters works" time="11.125">
+<testsuite name="tests\MercuryTransactionTest.spec.js" timestamp="1674009963863" hostname="" tests="2" failures="2" skipped="0" time="40.787" errors="0">
+<testcase name="14. is Transaction filters works" classname="[firefox] › tests\MercuryTransactionTest.spec.js › 14. is Transaction filters works" time="10.777">
 <failure message="MercuryTransactionTest.spec.js:3:5 14. is Transaction filters works" type="FAILURE">
 <![CDATA[  [firefox] › tests\MercuryTransactionTest.spec.js:3:5 › 14. is Transaction filters works ==========
 
@@ -1470,7 +1496,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="15. view all transactions" classname="[firefox] › tests\MercuryTransactionTest.spec.js › 15. view all transactions" time="29.999">
+<testcase name="15. view all transactions" classname="[firefox] › tests\MercuryTransactionTest.spec.js › 15. view all transactions" time="30.01">
 <failure message="MercuryTransactionTest.spec.js:16:5 15. view all transactions" type="FAILURE">
 <![CDATA[  [firefox] › tests\MercuryTransactionTest.spec.js:16:5 › 15. view all transactions ================
 
@@ -1498,10 +1524,10 @@
 </failure>
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryTreasuryTest.spec.js" timestamp="1674008497275" hostname="" tests="4" failures="3" skipped="0" time="25.357" errors="0">
-<testcase name="27. Treasury Page Available" classname="[firefox] › tests\MercuryTreasuryTest.spec.js › 27. Treasury Page Available" time="3.513">
+<testsuite name="tests\MercuryTreasuryTest.spec.js" timestamp="1674009963863" hostname="" tests="4" failures="3" skipped="0" time="27.61" errors="0">
+<testcase name="27. Treasury Page Available" classname="[firefox] › tests\MercuryTreasuryTest.spec.js › 27. Treasury Page Available" time="3.308">
 </testcase>
-<testcase name="28. Treasury Transfer In" classname="[firefox] › tests\MercuryTreasuryTest.spec.js › 28. Treasury Transfer In" time="8.901">
+<testcase name="28. Treasury Transfer In" classname="[firefox] › tests\MercuryTreasuryTest.spec.js › 28. Treasury Transfer In" time="10.705">
 <failure message="MercuryTreasuryTest.spec.js:8:5 28. Treasury Transfer In" type="FAILURE">
 <![CDATA[  [firefox] › tests\MercuryTreasuryTest.spec.js:8:5 › 28. Treasury Transfer In =====================
 
@@ -1539,7 +1565,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="29. Treasury Transfer out" classname="[firefox] › tests\MercuryTreasuryTest.spec.js › 29. Treasury Transfer out" time="9.319">
+<testcase name="29. Treasury Transfer out" classname="[firefox] › tests\MercuryTreasuryTest.spec.js › 29. Treasury Transfer out" time="9.615">
 <failure message="MercuryTreasuryTest.spec.js:22:5 29. Treasury Transfer out" type="FAILURE">
 <![CDATA[  [firefox] › tests\MercuryTreasuryTest.spec.js:22:5 › 29. Treasury Transfer out ===================
 
@@ -1577,7 +1603,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="30. Treasury Daily and Monthly filter" classname="[firefox] › tests\MercuryTreasuryTest.spec.js › 30. Treasury Daily and Monthly filter" time="3.624">
+<testcase name="30. Treasury Daily and Monthly filter" classname="[firefox] › tests\MercuryTreasuryTest.spec.js › 30. Treasury Daily and Monthly filter" time="3.982">
 <failure message="MercuryTreasuryTest.spec.js:36:5 30. Treasury Daily and Monthly filter" type="FAILURE">
 <![CDATA[  [firefox] › tests\MercuryTreasuryTest.spec.js:36:5 › 30. Treasury Daily and Monthly filter =======
 
@@ -1611,10 +1637,10 @@
 </failure>
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryAvailabilityTest.spec.js" timestamp="1674008497275" hostname="" tests="7" failures="1" skipped="0" time="32.709" errors="0">
-<testcase name="01.If Home page Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 01.If Home page Available" time="5.067">
+<testsuite name="tests\MercuryAvailabilityTest.spec.js" timestamp="1674009963863" hostname="" tests="7" failures="1" skipped="0" time="34.777" errors="0">
+<testcase name="01.If Home page Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 01.If Home page Available" time="4.714">
 </testcase>
-<testcase name="02.If Transaction button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 02.If Transaction button Available" time="4.041">
+<testcase name="02.If Transaction button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 02.If Transaction button Available" time="4.464">
 <failure message="MercuryAvailabilityTest.spec.js:7:5 02.If Transaction button Available" type="FAILURE">
 <![CDATA[  [webkit] › tests\MercuryAvailabilityTest.spec.js:7:5 › 02.If Transaction button Available ========
 
@@ -1639,21 +1665,21 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="03.If Payment button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 03.If Payment button Available" time="5.508">
+<testcase name="03.If Payment button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 03.If Payment button Available" time="6.197">
 </testcase>
-<testcase name="04.If Cards button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 04.If Cards button Available" time="4.638">
+<testcase name="04.If Cards button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 04.If Cards button Available" time="4.385">
 </testcase>
-<testcase name="05.If Credit button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 05.If Credit button Available" time="4.153">
+<testcase name="05.If Credit button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 05.If Credit button Available" time="4.577">
 </testcase>
-<testcase name="06.If Tresury button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 06.If Tresury button Available" time="4.584">
+<testcase name="06.If Tresury button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 06.If Tresury button Available" time="4.898">
 </testcase>
-<testcase name="07.If Capital button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 07.If Capital button Available" time="4.718">
+<testcase name="07.If Capital button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 07.If Capital button Available" time="5.542">
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryCardsTest.spec.js" timestamp="1674008497275" hostname="" tests="5" failures="3" skipped="0" time="78.298" errors="0">
-<testcase name="20. If cards page available" classname="[webkit] › tests\MercuryCardsTest.spec.js › 20. If cards page available" time="4.676">
+<testsuite name="tests\MercuryCardsTest.spec.js" timestamp="1674009963863" hostname="" tests="5" failures="3" skipped="0" time="80.384" errors="0">
+<testcase name="20. If cards page available" classname="[webkit] › tests\MercuryCardsTest.spec.js › 20. If cards page available" time="5.453">
 </testcase>
-<testcase name="21. Issue new standard card" classname="[webkit] › tests\MercuryCardsTest.spec.js › 21. Issue new standard card" time="30.006">
+<testcase name="21. Issue new standard card" classname="[webkit] › tests\MercuryCardsTest.spec.js › 21. Issue new standard card" time="30.004">
 <failure message="MercuryCardsTest.spec.js:8:5 21. Issue new standard card" type="FAILURE">
 <![CDATA[  [webkit] › tests\MercuryCardsTest.spec.js:8:5 › 21. Issue new standard card ======================
 
@@ -1680,7 +1706,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="22. Issue new merchant card" classname="[webkit] › tests\MercuryCardsTest.spec.js › 22. Issue new merchant card" time="30.001">
+<testcase name="22. Issue new merchant card" classname="[webkit] › tests\MercuryCardsTest.spec.js › 22. Issue new merchant card" time="30.003">
 <failure message="MercuryCardsTest.spec.js:20:7 22. Issue new merchant card" type="FAILURE">
 <![CDATA[  [webkit] › tests\MercuryCardsTest.spec.js:20:7 › 22. Issue new merchant card =====================
 
@@ -1707,7 +1733,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="23. Card filter test" classname="[webkit] › tests\MercuryCardsTest.spec.js › 23. Card filter test" time="9.28">
+<testcase name="23. Card filter test" classname="[webkit] › tests\MercuryCardsTest.spec.js › 23. Card filter test" time="10.014">
 <failure message="MercuryCardsTest.spec.js:36:7 23. Card filter test" type="FAILURE">
 <![CDATA[  [webkit] › tests\MercuryCardsTest.spec.js:36:7 › 23. Card filter test ============================
 
@@ -1721,8 +1747,6 @@
       -   locator resolved to <li tabindex="0" role="button" class="styles__tag_h2…>…</li>
       -   unexpected value "Credit Cards"
       - waiting for getByRole('button', { name: 'Credit Cards Remove Tag' })
-      -   locator resolved to <li tabindex="0" role="button" class="styles__tag_h2…>…</li>
-      -   unexpected value "Credit Cards"
       -   locator resolved to <li tabindex="0" role="button" class="styles__tag_h2…>…</li>
       -   unexpected value "Credit Cards"
       -   locator resolved to <li tabindex="0" role="button" class="styles__tag_h2…>…</li>
@@ -1751,19 +1775,19 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="24. Card details and reveal" classname="[webkit] › tests\MercuryCardsTest.spec.js › 24. Card details and reveal" time="4.335">
+<testcase name="24. Card details and reveal" classname="[webkit] › tests\MercuryCardsTest.spec.js › 24. Card details and reveal" time="4.91">
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryCreditTest.spec.js" timestamp="1674008497275" hostname="" tests="2" failures="0" skipped="0" time="11.922" errors="0">
-<testcase name="25. Credit Page available" classname="[webkit] › tests\MercuryCreditTest.spec.js › 25. Credit Page available" time="3.983">
+<testsuite name="tests\MercuryCreditTest.spec.js" timestamp="1674009963863" hostname="" tests="2" failures="0" skipped="0" time="10.684" errors="0">
+<testcase name="25. Credit Page available" classname="[webkit] › tests\MercuryCreditTest.spec.js › 25. Credit Page available" time="3.704">
 </testcase>
-<testcase name="26. Credit pay" classname="[webkit] › tests\MercuryCreditTest.spec.js › 26. Credit pay" time="7.939">
+<testcase name="26. Credit pay" classname="[webkit] › tests\MercuryCreditTest.spec.js › 26. Credit pay" time="6.98">
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryHomeTest.spec.js" timestamp="1674008497275" hostname="" tests="6" failures="2" skipped="0" time="69.324" errors="0">
-<testcase name="08.If signed in" classname="[webkit] › tests\MercuryHomeTest.spec.js › 08.If signed in" time="3.867">
+<testsuite name="tests\MercuryHomeTest.spec.js" timestamp="1674009963863" hostname="" tests="6" failures="2" skipped="0" time="71.524" errors="0">
+<testcase name="08.If signed in" classname="[webkit] › tests\MercuryHomeTest.spec.js › 08.If signed in" time="4.019">
 </testcase>
-<testcase name="09. If Move money works" classname="[webkit] › tests\MercuryHomeTest.spec.js › 09. If Move money works" time="30.001">
+<testcase name="09. If Move money works" classname="[webkit] › tests\MercuryHomeTest.spec.js › 09. If Move money works" time="30.006">
 <failure message="MercuryHomeTest.spec.js:9:5 09. If Move money works" type="FAILURE">
 <![CDATA[  [webkit] › tests\MercuryHomeTest.spec.js:9:5 › 09. If Move money works ===========================
 
@@ -1790,13 +1814,13 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="10. Add fund" classname="[webkit] › tests\MercuryHomeTest.spec.js › 10. Add fund" time="8.622">
+<testcase name="10. Add fund" classname="[webkit] › tests\MercuryHomeTest.spec.js › 10. Add fund" time="8.708">
 </testcase>
-<testcase name="11. Payment Request" classname="[webkit] › tests\MercuryHomeTest.spec.js › 11. Payment Request" time="9.83">
+<testcase name="11. Payment Request" classname="[webkit] › tests\MercuryHomeTest.spec.js › 11. Payment Request" time="10.464">
 </testcase>
-<testcase name="12. Transfer Between Accounts" classname="[webkit] › tests\MercuryHomeTest.spec.js › 12. Transfer Between Accounts" time="8.079">
+<testcase name="12. Transfer Between Accounts" classname="[webkit] › tests\MercuryHomeTest.spec.js › 12. Transfer Between Accounts" time="8.269">
 </testcase>
-<testcase name="13. Search Bar Function" classname="[webkit] › tests\MercuryHomeTest.spec.js › 13. Search Bar Function" time="8.925">
+<testcase name="13. Search Bar Function" classname="[webkit] › tests\MercuryHomeTest.spec.js › 13. Search Bar Function" time="10.058">
 <failure message="MercuryHomeTest.spec.js:85:7 13. Search Bar Function" type="FAILURE">
 <![CDATA[  [webkit] › tests\MercuryHomeTest.spec.js:85:7 › 13. Search Bar Function ==========================
 
@@ -1823,10 +1847,10 @@
 </failure>
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryPaymentTest.spec.js" timestamp="1674008497275" hostname="" tests="6" failures="2" skipped="0" time="38.743" errors="0">
-<testcase name="14. Payment Page available" classname="[webkit] › tests\MercuryPaymentTest.spec.js › 14. Payment Page available" time="2.394">
+<testsuite name="tests\MercuryPaymentTest.spec.js" timestamp="1674009963863" hostname="" tests="6" failures="2" skipped="0" time="39.848" errors="0">
+<testcase name="14. Payment Page available" classname="[webkit] › tests\MercuryPaymentTest.spec.js › 14. Payment Page available" time="2.945">
 </testcase>
-<testcase name="15. Incoming Payment" classname="[webkit] › tests\MercuryPaymentTest.spec.js › 15. Incoming Payment" time="4.87">
+<testcase name="15. Incoming Payment" classname="[webkit] › tests\MercuryPaymentTest.spec.js › 15. Incoming Payment" time="5.243">
 <failure message="MercuryPaymentTest.spec.js:8:5 15. Incoming Payment" type="FAILURE">
 <![CDATA[  [webkit] › tests\MercuryPaymentTest.spec.js:8:5 › 15. Incoming Payment ===========================
 
@@ -1844,13 +1868,13 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="16. Recipents Page" classname="[webkit] › tests\MercuryPaymentTest.spec.js › 16. Recipents Page" time="3.954">
+<testcase name="16. Recipents Page" classname="[webkit] › tests\MercuryPaymentTest.spec.js › 16. Recipents Page" time="4.341">
 </testcase>
-<testcase name="17. Recipents Details" classname="[webkit] › tests\MercuryPaymentTest.spec.js › 17. Recipents Details" time="4.778">
+<testcase name="17. Recipents Details" classname="[webkit] › tests\MercuryPaymentTest.spec.js › 17. Recipents Details" time="5.924">
 </testcase>
-<testcase name="18. Recipents request payment" classname="[webkit] › tests\MercuryPaymentTest.spec.js › 18. Recipents request payment" time="8.197">
+<testcase name="18. Recipents request payment" classname="[webkit] › tests\MercuryPaymentTest.spec.js › 18. Recipents request payment" time="7.067">
 </testcase>
-<testcase name="19. Send Payment" classname="[webkit] › tests\MercuryPaymentTest.spec.js › 19. Send Payment" time="14.55">
+<testcase name="19. Send Payment" classname="[webkit] › tests\MercuryPaymentTest.spec.js › 19. Send Payment" time="14.328">
 <failure message="MercuryPaymentTest.spec.js:47:7 19. Send Payment" type="FAILURE">
 <![CDATA[  [webkit] › tests\MercuryPaymentTest.spec.js:47:7 › 19. Send Payment ==============================
 
@@ -1887,8 +1911,8 @@
 </failure>
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryTransactionTest.spec.js" timestamp="1674008497275" hostname="" tests="2" failures="2" skipped="0" time="43.391" errors="0">
-<testcase name="14. is Transaction filters works" classname="[webkit] › tests\MercuryTransactionTest.spec.js › 14. is Transaction filters works" time="13.379">
+<testsuite name="tests\MercuryTransactionTest.spec.js" timestamp="1674009963863" hostname="" tests="2" failures="2" skipped="0" time="44.583" errors="0">
+<testcase name="14. is Transaction filters works" classname="[webkit] › tests\MercuryTransactionTest.spec.js › 14. is Transaction filters works" time="14.583">
 <failure message="MercuryTransactionTest.spec.js:3:5 14. is Transaction filters works" type="FAILURE">
 <![CDATA[  [webkit] › tests\MercuryTransactionTest.spec.js:3:5 › 14. is Transaction filters works ===========
 
@@ -1911,7 +1935,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="15. view all transactions" classname="[webkit] › tests\MercuryTransactionTest.spec.js › 15. view all transactions" time="30.012">
+<testcase name="15. view all transactions" classname="[webkit] › tests\MercuryTransactionTest.spec.js › 15. view all transactions" time="30">
 <failure message="MercuryTransactionTest.spec.js:16:5 15. view all transactions" type="FAILURE">
 <![CDATA[  [webkit] › tests\MercuryTransactionTest.spec.js:16:5 › 15. view all transactions =================
 
@@ -1939,10 +1963,10 @@
 </failure>
 </testcase>
 </testsuite>
-<testsuite name="tests\MercuryTreasuryTest.spec.js" timestamp="1674008497275" hostname="" tests="4" failures="3" skipped="0" time="29.678" errors="0">
-<testcase name="27. Treasury Page Available" classname="[webkit] › tests\MercuryTreasuryTest.spec.js › 27. Treasury Page Available" time="3.471">
+<testsuite name="tests\MercuryTreasuryTest.spec.js" timestamp="1674009963863" hostname="" tests="4" failures="3" skipped="0" time="32.663" errors="0">
+<testcase name="27. Treasury Page Available" classname="[webkit] › tests\MercuryTreasuryTest.spec.js › 27. Treasury Page Available" time="4.378">
 </testcase>
-<testcase name="28. Treasury Transfer In" classname="[webkit] › tests\MercuryTreasuryTest.spec.js › 28. Treasury Transfer In" time="11.246">
+<testcase name="28. Treasury Transfer In" classname="[webkit] › tests\MercuryTreasuryTest.spec.js › 28. Treasury Transfer In" time="13.255">
 <failure message="MercuryTreasuryTest.spec.js:8:5 28. Treasury Transfer In" type="FAILURE">
 <![CDATA[  [webkit] › tests\MercuryTreasuryTest.spec.js:8:5 › 28. Treasury Transfer In ======================
 
@@ -1954,8 +1978,6 @@
       - expect.toHaveText with timeout 5000ms
       - waiting for getByText('You’ve started a $10.00 transferfrom Ops / Payroll to TreasuryThe money should a')
       - waiting for getByText('You’ve started a $10.00 transferfrom Ops / Payroll to TreasuryThe money should a')
-      -   locator resolved to <div class="styles__page-wrapper-centered_jzliu">…</div>
-      -   unexpected value "You’ve started a $10.00 transferfrom Ops / Payroll to TreasuryThe money should arrive within 2-3 business days.Go to DashboardMake Another Transfer"
       -   locator resolved to <div class="styles__page-wrapper-centered_jzliu">…</div>
       -   unexpected value "You’ve started a $10.00 transferfrom Ops / Payroll to TreasuryThe money should arrive within 2-3 business days.Go to DashboardMake Another Transfer"
       -   locator resolved to <div class="styles__page-wrapper-centered_jzliu">…</div>
@@ -1982,7 +2004,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="29. Treasury Transfer out" classname="[webkit] › tests\MercuryTreasuryTest.spec.js › 29. Treasury Transfer out" time="10.907">
+<testcase name="29. Treasury Transfer out" classname="[webkit] › tests\MercuryTreasuryTest.spec.js › 29. Treasury Transfer out" time="10.783">
 <failure message="MercuryTreasuryTest.spec.js:22:5 29. Treasury Transfer out" type="FAILURE">
 <![CDATA[  [webkit] › tests\MercuryTreasuryTest.spec.js:22:5 › 29. Treasury Transfer out ====================
 
@@ -2018,7 +2040,7 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="30. Treasury Daily and Monthly filter" classname="[webkit] › tests\MercuryTreasuryTest.spec.js › 30. Treasury Daily and Monthly filter" time="4.054">
+<testcase name="30. Treasury Daily and Monthly filter" classname="[webkit] › tests\MercuryTreasuryTest.spec.js › 30. Treasury Daily and Monthly filter" time="4.247">
 <failure message="MercuryTreasuryTest.spec.js:36:5 30. Treasury Daily and Monthly filter" type="FAILURE">
 <![CDATA[  [webkit] › tests\MercuryTreasuryTest.spec.js:36:5 › 30. Treasury Daily and Monthly filter ========
 

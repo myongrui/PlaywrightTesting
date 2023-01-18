@@ -21,7 +21,7 @@ const config: PlaywrightTestConfig = {
   ],
   //testMatch: ["**.spec.js"],
   retries: 0,
-  reporter: [['html',{outputFolder: './playwright-report/default'}],["junit", { outputFile: "test-results/e2e-junit-results.xml" }]],
+  reporter: [["junit", { outputFile: "test-results/e2e-junit-results.xml" }]], //['html',{outputFolder: './playwright-report/default'}]
   use: {
     headless: true,
     // storageState: "./auth.json",
