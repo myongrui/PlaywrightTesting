@@ -19,9 +19,9 @@ const config: PlaywrightTestConfig = {
       use: { ...devices["Desktop Safari"] },
     },
   ],
-  testMatch: "MercuryAvailabilityTest.spec.js",
+  testMatch: "**.spec.js",
   retries: 0,
-  reporter: [["junit", { outputFile: "test-results/windows/e2e-junit-results.xml" }]], //['html',{outputFolder: './playwright-report/default'}]
+  reporter: [["junit", { outputFile: "test-results-windows/e2e-junit-results.xml" }]], //['html',{outputFolder: './playwright-report/default'}]
   use: {
     headless: true,
     // storageState: "./auth.json",

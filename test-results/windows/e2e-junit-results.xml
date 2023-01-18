@@ -1,0 +1,556 @@
+<testsuites id="" name="" tests="128" failures="0" skipped="121" errors="0" time="5.630689999997616">
+<testsuite name="tests\MercuryAvailabilityTest.spec.js" timestamp="1674015821958" hostname="" tests="7" failures="0" skipped="6" time="4.258" errors="0">
+<testcase name="01.If Home page Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 01.If Home page Available" time="3.592">
+</testcase>
+<testcase name="02.If Transaction button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 02.If Transaction button Available" time="0.666">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="03.If Payment button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 03.If Payment button Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="04.If Cards button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 04.If Cards button Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="05.If Credit button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 05.If Credit button Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="06.If Tresury button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 06.If Tresury button Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="07.If Capital button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 07.If Capital button Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryCardsTest.spec.js" timestamp="1674015821958" hostname="" tests="5" failures="0" skipped="4" time="4.184" errors="0">
+<testcase name="20. If cards page available" classname="[chromium] › tests\MercuryCardsTest.spec.js › 20. If cards page available" time="3.859">
+</testcase>
+<testcase name="21. Issue new standard card" classname="[chromium] › tests\MercuryCardsTest.spec.js › 21. Issue new standard card" time="0.325">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="22. Issue new merchant card" classname="[chromium] › tests\MercuryCardsTest.spec.js › 22. Issue new merchant card" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="23. Card filter test" classname="[chromium] › tests\MercuryCardsTest.spec.js › 23. Card filter test" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="24. Card details and reveal" classname="[chromium] › tests\MercuryCardsTest.spec.js › 24. Card details and reveal" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryCreditTest.spec.js" timestamp="1674015821958" hostname="" tests="2" failures="0" skipped="1" time="4.152" errors="0">
+<testcase name="25. Credit Page available" classname="[chromium] › tests\MercuryCreditTest.spec.js › 25. Credit Page available" time="3.228">
+</testcase>
+<testcase name="26. Credit pay" classname="[chromium] › tests\MercuryCreditTest.spec.js › 26. Credit pay" time="0.924">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryHomeTest.spec.js" timestamp="1674015821958" hostname="" tests="6" failures="0" skipped="5" time="4.245" errors="0">
+<testcase name="08.If signed in" classname="[chromium] › tests\MercuryHomeTest.spec.js › 08.If signed in" time="3.617">
+</testcase>
+<testcase name="09. If Move money works" classname="[chromium] › tests\MercuryHomeTest.spec.js › 09. If Move money works" time="0.628">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="10. Add fund" classname="[chromium] › tests\MercuryHomeTest.spec.js › 10. Add fund" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="11. Payment Request" classname="[chromium] › tests\MercuryHomeTest.spec.js › 11. Payment Request" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="12. Transfer Between Accounts" classname="[chromium] › tests\MercuryHomeTest.spec.js › 12. Transfer Between Accounts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="13. Search Bar Function" classname="[chromium] › tests\MercuryHomeTest.spec.js › 13. Search Bar Function" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryPaymentTest.spec.js" timestamp="1674015821958" hostname="" tests="6" failures="0" skipped="5" time="4.117" errors="0">
+<testcase name="14. Payment Page available" classname="[chromium] › tests\MercuryPaymentTest.spec.js › 14. Payment Page available" time="3.325">
+</testcase>
+<testcase name="15. Incoming Payment" classname="[chromium] › tests\MercuryPaymentTest.spec.js › 15. Incoming Payment" time="0.792">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="16. Recipents Page" classname="[chromium] › tests\MercuryPaymentTest.spec.js › 16. Recipents Page" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="17. Recipents Details" classname="[chromium] › tests\MercuryPaymentTest.spec.js › 17. Recipents Details" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="18. Recipents request payment" classname="[chromium] › tests\MercuryPaymentTest.spec.js › 18. Recipents request payment" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="19. Send Payment" classname="[chromium] › tests\MercuryPaymentTest.spec.js › 19. Send Payment" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryTransactionTest.spec.js" timestamp="1674015821958" hostname="" tests="2" failures="0" skipped="2" time="4.209" errors="0">
+<testcase name="14. is Transaction filters works" classname="[chromium] › tests\MercuryTransactionTest.spec.js › 14. is Transaction filters works" time="4.209">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="15. view all transactions" classname="[chromium] › tests\MercuryTransactionTest.spec.js › 15. view all transactions" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryTreasuryTest.spec.js" timestamp="1674015821958" hostname="" tests="4" failures="0" skipped="3" time="4.268" errors="0">
+<testcase name="27. Treasury Page Available" classname="[chromium] › tests\MercuryTreasuryTest.spec.js › 27. Treasury Page Available" time="3.814">
+</testcase>
+<testcase name="28. Treasury Transfer In" classname="[chromium] › tests\MercuryTreasuryTest.spec.js › 28. Treasury Transfer In" time="0.454">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="29. Treasury Transfer out" classname="[chromium] › tests\MercuryTreasuryTest.spec.js › 29. Treasury Transfer out" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="30. Treasury Daily and Monthly filter" classname="[chromium] › tests\MercuryTreasuryTest.spec.js › 30. Treasury Daily and Monthly filter" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryAvailabilityTest.spec.js" timestamp="1674015821958" hostname="" tests="7" failures="0" skipped="6" time="3.998" errors="0">
+<testcase name="01.If Home page Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 01.If Home page Available" time="3.334">
+</testcase>
+<testcase name="02.If Transaction button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 02.If Transaction button Available" time="0.664">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="03.If Payment button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 03.If Payment button Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="04.If Cards button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 04.If Cards button Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="05.If Credit button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 05.If Credit button Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="06.If Tresury button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 06.If Tresury button Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="07.If Capital button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 07.If Capital button Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryCardsTest.spec.js" timestamp="1674015821958" hostname="" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="20. If cards page available" classname="[pixel] › tests\MercuryCardsTest.spec.js › 20. If cards page available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="21. Issue new standard card" classname="[pixel] › tests\MercuryCardsTest.spec.js › 21. Issue new standard card" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="22. Issue new merchant card" classname="[pixel] › tests\MercuryCardsTest.spec.js › 22. Issue new merchant card" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="23. Card filter test" classname="[pixel] › tests\MercuryCardsTest.spec.js › 23. Card filter test" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="24. Card details and reveal" classname="[pixel] › tests\MercuryCardsTest.spec.js › 24. Card details and reveal" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryCreditTest.spec.js" timestamp="1674015821958" hostname="" tests="2" failures="0" skipped="2" time="0" errors="0">
+<testcase name="25. Credit Page available" classname="[pixel] › tests\MercuryCreditTest.spec.js › 25. Credit Page available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="26. Credit pay" classname="[pixel] › tests\MercuryCreditTest.spec.js › 26. Credit pay" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryHomeTest.spec.js" timestamp="1674015821958" hostname="" tests="6" failures="0" skipped="6" time="0" errors="0">
+<testcase name="08.If signed in" classname="[pixel] › tests\MercuryHomeTest.spec.js › 08.If signed in" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="09. If Move money works" classname="[pixel] › tests\MercuryHomeTest.spec.js › 09. If Move money works" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="10. Add fund" classname="[pixel] › tests\MercuryHomeTest.spec.js › 10. Add fund" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="11. Payment Request" classname="[pixel] › tests\MercuryHomeTest.spec.js › 11. Payment Request" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="12. Transfer Between Accounts" classname="[pixel] › tests\MercuryHomeTest.spec.js › 12. Transfer Between Accounts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="13. Search Bar Function" classname="[pixel] › tests\MercuryHomeTest.spec.js › 13. Search Bar Function" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryPaymentTest.spec.js" timestamp="1674015821958" hostname="" tests="6" failures="0" skipped="6" time="0" errors="0">
+<testcase name="14. Payment Page available" classname="[pixel] › tests\MercuryPaymentTest.spec.js › 14. Payment Page available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="15. Incoming Payment" classname="[pixel] › tests\MercuryPaymentTest.spec.js › 15. Incoming Payment" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="16. Recipents Page" classname="[pixel] › tests\MercuryPaymentTest.spec.js › 16. Recipents Page" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="17. Recipents Details" classname="[pixel] › tests\MercuryPaymentTest.spec.js › 17. Recipents Details" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="18. Recipents request payment" classname="[pixel] › tests\MercuryPaymentTest.spec.js › 18. Recipents request payment" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="19. Send Payment" classname="[pixel] › tests\MercuryPaymentTest.spec.js › 19. Send Payment" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryTransactionTest.spec.js" timestamp="1674015821958" hostname="" tests="2" failures="0" skipped="2" time="0" errors="0">
+<testcase name="14. is Transaction filters works" classname="[pixel] › tests\MercuryTransactionTest.spec.js › 14. is Transaction filters works" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="15. view all transactions" classname="[pixel] › tests\MercuryTransactionTest.spec.js › 15. view all transactions" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryTreasuryTest.spec.js" timestamp="1674015821958" hostname="" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="27. Treasury Page Available" classname="[pixel] › tests\MercuryTreasuryTest.spec.js › 27. Treasury Page Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="28. Treasury Transfer In" classname="[pixel] › tests\MercuryTreasuryTest.spec.js › 28. Treasury Transfer In" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="29. Treasury Transfer out" classname="[pixel] › tests\MercuryTreasuryTest.spec.js › 29. Treasury Transfer out" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="30. Treasury Daily and Monthly filter" classname="[pixel] › tests\MercuryTreasuryTest.spec.js › 30. Treasury Daily and Monthly filter" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryAvailabilityTest.spec.js" timestamp="1674015821958" hostname="" tests="7" failures="0" skipped="7" time="0" errors="0">
+<testcase name="01.If Home page Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 01.If Home page Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="02.If Transaction button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 02.If Transaction button Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="03.If Payment button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 03.If Payment button Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="04.If Cards button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 04.If Cards button Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="05.If Credit button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 05.If Credit button Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="06.If Tresury button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 06.If Tresury button Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="07.If Capital button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 07.If Capital button Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryCardsTest.spec.js" timestamp="1674015821958" hostname="" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="20. If cards page available" classname="[firefox] › tests\MercuryCardsTest.spec.js › 20. If cards page available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="21. Issue new standard card" classname="[firefox] › tests\MercuryCardsTest.spec.js › 21. Issue new standard card" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="22. Issue new merchant card" classname="[firefox] › tests\MercuryCardsTest.spec.js › 22. Issue new merchant card" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="23. Card filter test" classname="[firefox] › tests\MercuryCardsTest.spec.js › 23. Card filter test" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="24. Card details and reveal" classname="[firefox] › tests\MercuryCardsTest.spec.js › 24. Card details and reveal" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryCreditTest.spec.js" timestamp="1674015821958" hostname="" tests="2" failures="0" skipped="2" time="0" errors="0">
+<testcase name="25. Credit Page available" classname="[firefox] › tests\MercuryCreditTest.spec.js › 25. Credit Page available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="26. Credit pay" classname="[firefox] › tests\MercuryCreditTest.spec.js › 26. Credit pay" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryHomeTest.spec.js" timestamp="1674015821958" hostname="" tests="6" failures="0" skipped="6" time="0" errors="0">
+<testcase name="08.If signed in" classname="[firefox] › tests\MercuryHomeTest.spec.js › 08.If signed in" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="09. If Move money works" classname="[firefox] › tests\MercuryHomeTest.spec.js › 09. If Move money works" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="10. Add fund" classname="[firefox] › tests\MercuryHomeTest.spec.js › 10. Add fund" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="11. Payment Request" classname="[firefox] › tests\MercuryHomeTest.spec.js › 11. Payment Request" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="12. Transfer Between Accounts" classname="[firefox] › tests\MercuryHomeTest.spec.js › 12. Transfer Between Accounts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="13. Search Bar Function" classname="[firefox] › tests\MercuryHomeTest.spec.js › 13. Search Bar Function" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryPaymentTest.spec.js" timestamp="1674015821958" hostname="" tests="6" failures="0" skipped="6" time="0" errors="0">
+<testcase name="14. Payment Page available" classname="[firefox] › tests\MercuryPaymentTest.spec.js › 14. Payment Page available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="15. Incoming Payment" classname="[firefox] › tests\MercuryPaymentTest.spec.js › 15. Incoming Payment" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="16. Recipents Page" classname="[firefox] › tests\MercuryPaymentTest.spec.js › 16. Recipents Page" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="17. Recipents Details" classname="[firefox] › tests\MercuryPaymentTest.spec.js › 17. Recipents Details" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="18. Recipents request payment" classname="[firefox] › tests\MercuryPaymentTest.spec.js › 18. Recipents request payment" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="19. Send Payment" classname="[firefox] › tests\MercuryPaymentTest.spec.js › 19. Send Payment" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryTransactionTest.spec.js" timestamp="1674015821958" hostname="" tests="2" failures="0" skipped="2" time="0" errors="0">
+<testcase name="14. is Transaction filters works" classname="[firefox] › tests\MercuryTransactionTest.spec.js › 14. is Transaction filters works" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="15. view all transactions" classname="[firefox] › tests\MercuryTransactionTest.spec.js › 15. view all transactions" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryTreasuryTest.spec.js" timestamp="1674015821958" hostname="" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="27. Treasury Page Available" classname="[firefox] › tests\MercuryTreasuryTest.spec.js › 27. Treasury Page Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="28. Treasury Transfer In" classname="[firefox] › tests\MercuryTreasuryTest.spec.js › 28. Treasury Transfer In" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="29. Treasury Transfer out" classname="[firefox] › tests\MercuryTreasuryTest.spec.js › 29. Treasury Transfer out" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="30. Treasury Daily and Monthly filter" classname="[firefox] › tests\MercuryTreasuryTest.spec.js › 30. Treasury Daily and Monthly filter" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryAvailabilityTest.spec.js" timestamp="1674015821958" hostname="" tests="7" failures="0" skipped="7" time="0" errors="0">
+<testcase name="01.If Home page Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 01.If Home page Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="02.If Transaction button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 02.If Transaction button Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="03.If Payment button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 03.If Payment button Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="04.If Cards button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 04.If Cards button Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="05.If Credit button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 05.If Credit button Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="06.If Tresury button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 06.If Tresury button Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="07.If Capital button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 07.If Capital button Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryCardsTest.spec.js" timestamp="1674015821958" hostname="" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="20. If cards page available" classname="[webkit] › tests\MercuryCardsTest.spec.js › 20. If cards page available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="21. Issue new standard card" classname="[webkit] › tests\MercuryCardsTest.spec.js › 21. Issue new standard card" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="22. Issue new merchant card" classname="[webkit] › tests\MercuryCardsTest.spec.js › 22. Issue new merchant card" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="23. Card filter test" classname="[webkit] › tests\MercuryCardsTest.spec.js › 23. Card filter test" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="24. Card details and reveal" classname="[webkit] › tests\MercuryCardsTest.spec.js › 24. Card details and reveal" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryCreditTest.spec.js" timestamp="1674015821958" hostname="" tests="2" failures="0" skipped="2" time="0" errors="0">
+<testcase name="25. Credit Page available" classname="[webkit] › tests\MercuryCreditTest.spec.js › 25. Credit Page available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="26. Credit pay" classname="[webkit] › tests\MercuryCreditTest.spec.js › 26. Credit pay" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryHomeTest.spec.js" timestamp="1674015821958" hostname="" tests="6" failures="0" skipped="6" time="0" errors="0">
+<testcase name="08.If signed in" classname="[webkit] › tests\MercuryHomeTest.spec.js › 08.If signed in" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="09. If Move money works" classname="[webkit] › tests\MercuryHomeTest.spec.js › 09. If Move money works" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="10. Add fund" classname="[webkit] › tests\MercuryHomeTest.spec.js › 10. Add fund" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="11. Payment Request" classname="[webkit] › tests\MercuryHomeTest.spec.js › 11. Payment Request" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="12. Transfer Between Accounts" classname="[webkit] › tests\MercuryHomeTest.spec.js › 12. Transfer Between Accounts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="13. Search Bar Function" classname="[webkit] › tests\MercuryHomeTest.spec.js › 13. Search Bar Function" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryPaymentTest.spec.js" timestamp="1674015821958" hostname="" tests="6" failures="0" skipped="6" time="0" errors="0">
+<testcase name="14. Payment Page available" classname="[webkit] › tests\MercuryPaymentTest.spec.js › 14. Payment Page available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="15. Incoming Payment" classname="[webkit] › tests\MercuryPaymentTest.spec.js › 15. Incoming Payment" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="16. Recipents Page" classname="[webkit] › tests\MercuryPaymentTest.spec.js › 16. Recipents Page" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="17. Recipents Details" classname="[webkit] › tests\MercuryPaymentTest.spec.js › 17. Recipents Details" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="18. Recipents request payment" classname="[webkit] › tests\MercuryPaymentTest.spec.js › 18. Recipents request payment" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="19. Send Payment" classname="[webkit] › tests\MercuryPaymentTest.spec.js › 19. Send Payment" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryTransactionTest.spec.js" timestamp="1674015821958" hostname="" tests="2" failures="0" skipped="2" time="0" errors="0">
+<testcase name="14. is Transaction filters works" classname="[webkit] › tests\MercuryTransactionTest.spec.js › 14. is Transaction filters works" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="15. view all transactions" classname="[webkit] › tests\MercuryTransactionTest.spec.js › 15. view all transactions" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryTreasuryTest.spec.js" timestamp="1674015821958" hostname="" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="27. Treasury Page Available" classname="[webkit] › tests\MercuryTreasuryTest.spec.js › 27. Treasury Page Available" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="28. Treasury Transfer In" classname="[webkit] › tests\MercuryTreasuryTest.spec.js › 28. Treasury Transfer In" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="29. Treasury Transfer out" classname="[webkit] › tests\MercuryTreasuryTest.spec.js › 29. Treasury Transfer out" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="30. Treasury Daily and Monthly filter" classname="[webkit] › tests\MercuryTreasuryTest.spec.js › 30. Treasury Daily and Monthly filter" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>

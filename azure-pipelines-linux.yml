@@ -29,7 +29,7 @@ jobs:
       - task: PublishTestResults@2
         displayName: "Publish test results"
         inputs:
-          searchFolder: "test-results/linux"
+          searchFolder: "test-results-linux"
           testResultsFormat: "JUnit"
           testResultsFiles: "e2e-junit-results.xml"
           mergeTestResults: true
