@@ -21,9 +21,18 @@ jobs:
       - script: |
           npx playwright test
         displayName: "Run Playwright tests"
-      - task: PublishHtmlReport@1
-        displayName: Publish Html Report
+      # - task: PublishHtmlReport@1
+      #   displayName: Publish Html Report
+      #   inputs:
+      #     tabName: Playwright Report
+      #     reportDir: playwright-report/windows/index.html
+      - task: PublishTestResults@2
+        displayName: "Publish test results"
         inputs:
-          tabName: Playwright Report
-          reportDir: playwright-report/windows/index.html
-        
+          searchFolder: "my-e2e-tests/test-results"
+          testResultsFormat: "JUnit"
+          testResultsFiles: "e2e-junit-results.xml"
+          mergeTestResults: true
+          failTaskOnFailedTests: true
+          testRunTitle: "My End-To-End Tests"
+        condition: succeededOrFailed()
