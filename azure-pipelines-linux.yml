@@ -3,7 +3,7 @@ trigger:
   - main
   - master
 jobs:
-  - job: test
+  - job: Tests
     timeoutInMinutes: 60
     pool:
       vmImage: "ubuntu-latest"
