@@ -2,20 +2,11 @@ name: Playwright Tests
 trigger:
   - main
   - master
-matrix:
-  linux:
-    imageName: "ubuntu-latest"
-  mac:
-    imageName: "macOS-latest"
-  windows:
-    imageName: "windows-latest"
-
 jobs:
   - job: test
     timeoutInMinutes: 60
-    strategy:
     pool:
-      vmImage: $(imageName)
+      vmImage: "ubuntu-latest"
     steps:
       - task: NodeTool@0
         inputs:
@@ -28,7 +19,7 @@ jobs:
           npx playwright install --with-deps
         displayName: "Install Playwright Browsers"
       - script: |
-          npx playwright test
+          npx playwright test --config=linux.config.ts
         displayName: "Run Playwright tests"
       # - task: PublishHtmlReport@1
       #   displayName: Publish Html Report
