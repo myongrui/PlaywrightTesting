@@ -2,17 +2,18 @@ name: Playwright Tests
 trigger:
   - main
   - master
+matrix:
+  linux:
+    imageName: "ubuntu-latest"
+  mac:
+    imageName: "macOS-latest"
+  windows:
+    imageName: "windows-latest"
+
 jobs:
   - job: test
     timeoutInMinutes: 60
     strategy:
-    matrix:
-      linux:
-        imageName: "ubuntu-latest"
-      mac:
-        imageName: "macOS-latest"
-      windows:
-        imageName: "windows-latest"
     pool:
       vmImage: $(imageName)
     steps:
