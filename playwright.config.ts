@@ -19,7 +19,7 @@ const config: PlaywrightTestConfig = {
       use: { ...devices["Desktop Safari"] },
     },
   ],
-  //testMatch: ["**.spec.js"],
+  testMatch: "MercuryAvailabilityTest.spec.js",
   retries: 0,
   reporter: [["junit", { outputFile: "test-results/e2e-junit-results.xml" }]], //['html',{outputFolder: './playwright-report/default'}]
   use: {
