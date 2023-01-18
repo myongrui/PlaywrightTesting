@@ -19,13 +19,13 @@ const config: PlaywrightTestConfig = {
       use: { ...devices["Desktop Safari"] },
     },
   ],
-  //testMatch: ["**.spec.js"],
+  testMatch: "MercuryAvailabilityTest.spec.js",
   retries: 0,
-  reporter: [['html',{outputFolder: './playwright-report/macos'}]],
+  reporter: [["junit", { outputFile: "test-results/macos/e2e-junit-results.xml" }]], //['html',{outputFolder: './playwright-report/default'}]
   use: {
-    headless: false,
-    //storageState: "./auth.json",
-    //navigationTimeout: 60000,
+    headless: true,
+    // storageState: "./auth.json",
+    navigationTimeout: 60000,
   },
   
 };

@@ -1,0 +1,38 @@
+name: Playwright Tests
+trigger:
+  - main
+  - master
+jobs:
+  - job: Tests
+    timeoutInMinutes: 60
+    pool:
+      vmImage: "windows-latest"
+    steps:
+      - task: NodeTool@0
+        inputs:
+          versionSpec: "16.x"
+        displayName: "Install Node.js"
+      - script: |
+          npm ci
+        displayName: "Install dependencies"
+      - script: |
+          npx playwright install --with-deps
+        displayName: "Install Playwright Browsers"
+      - script: |
+          npx playwright test --config=window.config.ts
+        displayName: "Run Playwright tests"
+      # - task: PublishHtmlReport@1
+      #   displayName: Publish Html Report
+      #   inputs:
+      #     tabName: Playwright Report
+      #     reportDir: playwright-report/windows/index.html
+      - task: PublishTestResults@2
+        displayName: "Publish test results"
+        inputs:
+          searchFolder: "test-results/windows"
+          testResultsFormat: "JUnit"
+          testResultsFiles: "e2e-junit-results.xml"
+          mergeTestResults: true
+          failTaskOnFailedTests: true
+          testRunTitle: "My End-To-End Tests"
+        condition: succeededOrFailed()
