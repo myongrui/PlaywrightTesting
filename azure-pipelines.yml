@@ -5,8 +5,16 @@ trigger:
 jobs:
   - job: test
     timeoutInMinutes: 60
+    strategy:
+    matrix:
+      linux:
+        imageName: "ubuntu-latest"
+      mac:
+        imageName: "macOS-latest"
+      windows:
+        imageName: "windows-latest"
     pool:
-      vmImage: "ubuntu-latest"
+      vmImage: $(imageName)
     steps:
       - task: NodeTool@0
         inputs:
