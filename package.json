@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "register":"npx playwright test reg.spec.js ",
-    "saveauth":"npx playwright test login.spec.js --save-storage=auth.json",
+    "register": "npx playwright test reg.spec.js ",
+    "saveauth": "npx playwright test login.spec.js --save-storage=auth.json",
     "test": "npx playwright test",
     "windowtest": "npx playwright test --config=window.config.ts",
     "mactest": "npx playwright test --config=macos.config.ts",
@@ -12,5 +12,8 @@
     "@playwright/test": "^1.29.2",
     "ts-node": "10.0.0",
     "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "csv-parser": "^3.0.0"
   }
 }
