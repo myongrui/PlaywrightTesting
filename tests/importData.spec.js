@@ -3,8 +3,8 @@ const fs = require('fs');
 const csv = require('csv-parser');
 
 let data = [];
-
-fs.createReadStream('@playwright/tests/data.csv')
+//a
+fs.createReadStream('playwright/tests/data.csv')
     .pipe(csv())
     .on('data', (row) => {
         data.push(row);
