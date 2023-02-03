@@ -1,0 +1,266 @@
+<testsuites id="" name="" tests="28" failures="8" skipped="0" errors="0" time="187.19937999999524">
+<testsuite name="tests\MercuryAvailabilityTest.spec.js" timestamp="1675420195794" hostname="" tests="7" failures="1" skipped="0" time="19.382" errors="0">
+<testcase name="01.If Home page Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 01.If Home page Available" time="3.615">
+</testcase>
+<testcase name="02.If Transaction button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 02.If Transaction button Available" time="2.72">
+<failure message="MercuryAvailabilityTest.spec.js:7:5 02.If Transaction button Available" type="FAILURE">
+<![CDATA[  [chromium] › tests\MercuryAvailabilityTest.spec.js:7:5 › 02.If Transaction button Available ======
+
+    locator.click: Error: strict mode violation: getByRole('link', { name: 'Transactions' }) resolved to 3 elements:
+        1) <a href="/transactions" class="styles__link_eiRKS s…>Transactions</a> aka getByRole('link', { name: 'Transactions' }).filter({ hasText: 'Transactions' })
+        2) <a aria-label="View all outgoing transactions" href…>View All</a> aka getByRole('link', { name: 'View all outgoing transactions' })
+        3) <a aria-label="View all incoming transactions" href…>View All</a> aka getByRole('link', { name: 'View all incoming transactions' })
+
+    =========================== logs ===========================
+    waiting for getByRole('link', { name: 'Transactions' })
+      strict mode violation: getByRole('link', { name: 'Transactions' }) resolved to 3 elements:
+        1) <a href="/transactions" class="styles__link_eiRKS s…>Transactions</a> aka getByRole('link', { name: 'Transactions' }).filter({ hasText: 'Transactions' })
+        2) <a aria-label="View all outgoing transactions" href…>View All</a> aka getByRole('link', { name: 'View all outgoing transactions' })
+        3) <a aria-label="View all incoming transactions" href…>View All</a> aka getByRole('link', { name: 'View all incoming transactions' })
+
+    ============================================================
+
+       7 | test('02.If Transaction button Available', async ({ page }) => {
+       8 |     await page.goto('https://demo.mercury.com/dashboard');
+    >  9 |     await page.getByRole('link', { name: 'Transactions' }).click();
+         |                                                            ^
+      10 |     await expect(page).toHaveURL('https://demo.mercury.com/transactions')
+      11 | })
+      12 | test('03.If Payment button Available', async ({ page }) => {
+
+        at C:\Users\Mar Yong Rui\OneDrive - Ngee Ann Polytechnic\Documents\School Stuff\PFD\PlaywrightTesting\tests\MercuryAvailabilityTest.spec.js:9:60
+]]>
+</failure>
+</testcase>
+<testcase name="03.If Payment button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 03.If Payment button Available" time="2.418">
+</testcase>
+<testcase name="04.If Cards button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 04.If Cards button Available" time="2.178">
+</testcase>
+<testcase name="05.If Credit button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 05.If Credit button Available" time="2.37">
+</testcase>
+<testcase name="06.If Tresury button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 06.If Tresury button Available" time="3.097">
+</testcase>
+<testcase name="07.If Capital button Available" classname="[chromium] › tests\MercuryAvailabilityTest.spec.js › 07.If Capital button Available" time="2.984">
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryAvailabilityTest.spec.js" timestamp="1675420195794" hostname="" tests="7" failures="6" skipped="0" time="182.691" errors="0">
+<testcase name="01.If Home page Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 01.If Home page Available" time="2.654">
+</testcase>
+<testcase name="02.If Transaction button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 02.If Transaction button Available" time="30.013">
+<failure message="MercuryAvailabilityTest.spec.js:7:5 02.If Transaction button Available" type="FAILURE">
+<![CDATA[  [pixel] › tests\MercuryAvailabilityTest.spec.js:7:5 › 02.If Transaction button Available =========
+
+    Test timeout of 30000ms exceeded.
+
+    locator.click: Target closed
+    =========================== logs ===========================
+    waiting for getByRole('link', { name: 'Transactions' })
+    ============================================================
+
+       7 | test('02.If Transaction button Available', async ({ page }) => {
+       8 |     await page.goto('https://demo.mercury.com/dashboard');
+    >  9 |     await page.getByRole('link', { name: 'Transactions' }).click();
+         |                                                            ^
+      10 |     await expect(page).toHaveURL('https://demo.mercury.com/transactions')
+      11 | })
+      12 | test('03.If Payment button Available', async ({ page }) => {
+
+        at C:\Users\Mar Yong Rui\OneDrive - Ngee Ann Polytechnic\Documents\School Stuff\PFD\PlaywrightTesting\tests\MercuryAvailabilityTest.spec.js:9:60
+
+    Pending operations:
+      - locator.click at tests\MercuryAvailabilityTest.spec.js:9:60
+
+]]>
+</failure>
+</testcase>
+<testcase name="03.If Payment button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 03.If Payment button Available" time="30">
+<failure message="MercuryAvailabilityTest.spec.js:12:5 03.If Payment button Available" type="FAILURE">
+<![CDATA[  [pixel] › tests\MercuryAvailabilityTest.spec.js:12:5 › 03.If Payment button Available ============
+
+    Test timeout of 30000ms exceeded.
+
+    locator.click: Target closed
+    =========================== logs ===========================
+    waiting for getByRole('link', { name: 'Payments' })
+    ============================================================
+
+      12 | test('03.If Payment button Available', async ({ page }) => {
+      13 |     await page.goto('https://demo.mercury.com/dashboard');
+    > 14 |     await page.getByRole('link', { name: 'Payments' }).click();
+         |                                                        ^
+      15 |     await expect(page).toHaveURL('https://demo.mercury.com/payments')
+      16 | })
+      17 | test('04.If Cards button Available', async ({ page }) => {
+
+        at C:\Users\Mar Yong Rui\OneDrive - Ngee Ann Polytechnic\Documents\School Stuff\PFD\PlaywrightTesting\tests\MercuryAvailabilityTest.spec.js:14:56
+
+    Pending operations:
+      - locator.click at tests\MercuryAvailabilityTest.spec.js:14:56
+
+]]>
+</failure>
+</testcase>
+<testcase name="04.If Cards button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 04.If Cards button Available" time="30">
+<failure message="MercuryAvailabilityTest.spec.js:17:5 04.If Cards button Available" type="FAILURE">
+<![CDATA[  [pixel] › tests\MercuryAvailabilityTest.spec.js:17:5 › 04.If Cards button Available ==============
+
+    Test timeout of 30000ms exceeded.
+
+    locator.click: Target closed
+    =========================== logs ===========================
+    waiting for getByRole('link', { name: 'Cards' })
+    ============================================================
+
+      17 | test('04.If Cards button Available', async ({ page }) => {
+      18 |     await page.goto('https://demo.mercury.com/dashboard');
+    > 19 |     await page.getByRole('link', { name: 'Cards' }).click();
+         |                                                     ^
+      20 |     await expect(page).toHaveURL('https://demo.mercury.com/cards')
+      21 | })
+      22 | test('05.If Credit button Available', async ({ page }) => {
+
+        at C:\Users\Mar Yong Rui\OneDrive - Ngee Ann Polytechnic\Documents\School Stuff\PFD\PlaywrightTesting\tests\MercuryAvailabilityTest.spec.js:19:53
+
+    Pending operations:
+      - locator.click at tests\MercuryAvailabilityTest.spec.js:19:53
+
+]]>
+</failure>
+</testcase>
+<testcase name="05.If Credit button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 05.If Credit button Available" time="30.007">
+<failure message="MercuryAvailabilityTest.spec.js:22:5 05.If Credit button Available" type="FAILURE">
+<![CDATA[  [pixel] › tests\MercuryAvailabilityTest.spec.js:22:5 › 05.If Credit button Available =============
+
+    Test timeout of 30000ms exceeded.
+
+    locator.click: Target closed
+    =========================== logs ===========================
+    waiting for getByRole('link', { name: 'Credit' })
+    ============================================================
+
+      22 | test('05.If Credit button Available', async ({ page }) => {
+      23 |     await page.goto('https://demo.mercury.com/dashboard');
+    > 24 |     await page.getByRole('link', { name: 'Credit' }).click();
+         |                                                      ^
+      25 |     await expect(page).toHaveURL('https://demo.mercury.com/credit')
+      26 | })
+      27 | test('06.If Tresury button Available', async ({ page }) => {
+
+        at C:\Users\Mar Yong Rui\OneDrive - Ngee Ann Polytechnic\Documents\School Stuff\PFD\PlaywrightTesting\tests\MercuryAvailabilityTest.spec.js:24:54
+
+    Pending operations:
+      - locator.click at tests\MercuryAvailabilityTest.spec.js:24:54
+
+]]>
+</failure>
+</testcase>
+<testcase name="06.If Tresury button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 06.If Tresury button Available" time="30.01">
+<failure message="MercuryAvailabilityTest.spec.js:27:5 06.If Tresury button Available" type="FAILURE">
+<![CDATA[  [pixel] › tests\MercuryAvailabilityTest.spec.js:27:5 › 06.If Tresury button Available ============
+
+    Test timeout of 30000ms exceeded.
+
+    locator.click: Target closed
+    =========================== logs ===========================
+    waiting for getByRole('link', { name: 'Treasury' })
+    ============================================================
+
+      27 | test('06.If Tresury button Available', async ({ page }) => {
+      28 |     await page.goto('https://demo.mercury.com/dashboard');
+    > 29 |     await page.getByRole('link', { name: 'Treasury' }).click();
+         |                                                        ^
+      30 |     await expect(page).toHaveURL('https://demo.mercury.com/accounts/treasury/party-treasury-id-0')
+      31 | })
+      32 | test('07.If Capital button Available', async ({ page }) => {
+
+        at C:\Users\Mar Yong Rui\OneDrive - Ngee Ann Polytechnic\Documents\School Stuff\PFD\PlaywrightTesting\tests\MercuryAvailabilityTest.spec.js:29:56
+
+    Pending operations:
+      - locator.click at tests\MercuryAvailabilityTest.spec.js:29:56
+
+]]>
+</failure>
+</testcase>
+<testcase name="07.If Capital button Available" classname="[pixel] › tests\MercuryAvailabilityTest.spec.js › 07.If Capital button Available" time="30.007">
+<failure message="MercuryAvailabilityTest.spec.js:32:5 07.If Capital button Available" type="FAILURE">
+<![CDATA[  [pixel] › tests\MercuryAvailabilityTest.spec.js:32:5 › 07.If Capital button Available ============
+
+    Test timeout of 30000ms exceeded.
+
+    locator.click: Target closed
+    =========================== logs ===========================
+    waiting for getByRole('link', { name: 'Capital' })
+    ============================================================
+
+      32 | test('07.If Capital button Available', async ({ page }) => {
+      33 |     await page.goto('https://demo.mercury.com/dashboard');
+    > 34 |     await page.getByRole('link', { name: 'Capital' }).click();
+         |                                                       ^
+      35 |     await expect(page).toHaveURL('https://demo.mercury.com/capital')
+      36 | })
+
+        at C:\Users\Mar Yong Rui\OneDrive - Ngee Ann Polytechnic\Documents\School Stuff\PFD\PlaywrightTesting\tests\MercuryAvailabilityTest.spec.js:34:55
+
+    Pending operations:
+      - locator.click at tests\MercuryAvailabilityTest.spec.js:34:55
+
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryAvailabilityTest.spec.js" timestamp="1675420195794" hostname="" tests="7" failures="0" skipped="0" time="21.779" errors="0">
+<testcase name="01.If Home page Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 01.If Home page Available" time="3.012">
+</testcase>
+<testcase name="02.If Transaction button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 02.If Transaction button Available" time="2.805">
+</testcase>
+<testcase name="03.If Payment button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 03.If Payment button Available" time="2.875">
+</testcase>
+<testcase name="04.If Cards button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 04.If Cards button Available" time="6.188">
+</testcase>
+<testcase name="05.If Credit button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 05.If Credit button Available" time="2.068">
+</testcase>
+<testcase name="06.If Tresury button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 06.If Tresury button Available" time="2.333">
+</testcase>
+<testcase name="07.If Capital button Available" classname="[firefox] › tests\MercuryAvailabilityTest.spec.js › 07.If Capital button Available" time="2.498">
+</testcase>
+</testsuite>
+<testsuite name="tests\MercuryAvailabilityTest.spec.js" timestamp="1675420195794" hostname="" tests="7" failures="1" skipped="0" time="33.383" errors="0">
+<testcase name="01.If Home page Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 01.If Home page Available" time="5.405">
+</testcase>
+<testcase name="02.If Transaction button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 02.If Transaction button Available" time="4.156">
+<failure message="MercuryAvailabilityTest.spec.js:7:5 02.If Transaction button Available" type="FAILURE">
+<![CDATA[  [webkit] › tests\MercuryAvailabilityTest.spec.js:7:5 › 02.If Transaction button Available ========
+
+    locator.click: Error: strict mode violation: getByRole('link', { name: 'Transactions' }) resolved to 3 elements:
+        1) <a href="/transactions" class="styles__link_eiRKS s…>Transactions</a> aka getByRole('link', { name: 'Transactions' }).filter({ hasText: 'Transactions' })
+        2) <a aria-label="View all outgoing transactions" href…>View All</a> aka getByRole('link', { name: 'View all outgoing transactions' })
+        3) <a aria-label="View all incoming transactions" href…>View All</a> aka getByRole('link', { name: 'View all incoming transactions' })
+
+    =========================== logs ===========================
+    waiting for getByRole('link', { name: 'Transactions' })
+    ============================================================
+
+       7 | test('02.If Transaction button Available', async ({ page }) => {
+       8 |     await page.goto('https://demo.mercury.com/dashboard');
+    >  9 |     await page.getByRole('link', { name: 'Transactions' }).click();
+         |                                                            ^
+      10 |     await expect(page).toHaveURL('https://demo.mercury.com/transactions')
+      11 | })
+      12 | test('03.If Payment button Available', async ({ page }) => {
+
+        at C:\Users\Mar Yong Rui\OneDrive - Ngee Ann Polytechnic\Documents\School Stuff\PFD\PlaywrightTesting\tests\MercuryAvailabilityTest.spec.js:9:60
+]]>
+</failure>
+</testcase>
+<testcase name="03.If Payment button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 03.If Payment button Available" time="6.335">
+</testcase>
+<testcase name="04.If Cards button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 04.If Cards button Available" time="4.637">
+</testcase>
+<testcase name="05.If Credit button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 05.If Credit button Available" time="4.029">
+</testcase>
+<testcase name="06.If Tresury button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 06.If Tresury button Available" time="4.251">
+</testcase>
+<testcase name="07.If Capital button Available" classname="[webkit] › tests\MercuryAvailabilityTest.spec.js › 07.If Capital button Available" time="4.57">
+</testcase>
+</testsuite>
+</testsuites>
