@@ -26,6 +26,11 @@ jobs:
       #   inputs:
       #     tabName: Playwright Report
       #     reportDir: playwright-report/windows/index.html
+      #- task: PublishCodeCoverageResults@1
+       # displayName: "Publish code coverage report"
+        #inputs:
+         # codeCoverageTool: "JaCoCo"
+          #summaryFileLocation: "coverage/coverage-summary.json"
       - task: PublishTestResults@2
         displayName: "Publish test results"
         inputs:
